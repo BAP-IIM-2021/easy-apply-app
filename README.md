@@ -10,7 +10,7 @@ npm install
 
 # Creer une clé pour le projet en local. Important
 ```
-php artisan generate:key
+php artisan key:generate
 
 ```
 

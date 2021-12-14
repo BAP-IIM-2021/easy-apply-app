@@ -18,3 +18,6 @@ Route::get('/', [LoginController::class, 'index']);
 // Route::get('/register', [LoginController::class, 'register']);
 // Route::get('/login', [LoginController::class, 'login']);
     
+Route::get('/login', [LoginController::class, 'login_2']);
+// Route::get('/register', [LoginController::class, 'register']);
+// Route::get('/login', [LoginController::class, 'login']);

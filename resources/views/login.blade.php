@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>Login</title>
-</head>
-<body class="bg-slate-200">
+@extends('layout')
 
+@section('content')
+<body class="bg-slate-200">
     <section class=" max-h-screen mt-28 text-xl flex items-center flex-col ">
         <div class=" w-sm h-sm bg-blue-500 rounded-full mb-6">
         </div>
@@ -122,6 +115,7 @@
                 <p>Déjà un compte Easy Apply ? <a href="login" class=" text-blue-500 font-bold">Connexion</a></p>
         </form>
     </section>
-    <script src="./js/app.js"></script>
 </body>
-</html>
+
+    @endsection
+    

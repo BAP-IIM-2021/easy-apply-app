@@ -14,6 +14,6 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', [LoginController::class, 'index']);
+Route::get('/', [LoginController::class, 'inscription']);
 // Route::get('/register', [LoginController::class, 'register']);
 // Route::get('/login', [LoginController::class, 'login']);

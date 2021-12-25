@@ -9,6 +9,7 @@ module.exports = {
 
     width: {
       
+      'xxs': '2rem',
       'xs': '5rem',
       'sm': '10rem',
       'tiny': '20rem',
@@ -23,7 +24,7 @@ module.exports = {
       '7xl': '300rem',
     },
     height: {
-      'xxs': '3rem',
+      'xxs': '2rem',
       'xs': '3rem',
       'sm': '10rem',
       'tiny': '20rem',

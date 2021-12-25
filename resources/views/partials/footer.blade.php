@@ -3,13 +3,13 @@
         <img src="img/logo.png" alt="easy-apply" class="object-contain">
         <div class=" flex flex-col justify-center">
             <h3 class="font-bold text-2xl mb-10">Nous contacter</h3>
-            <div class="flex items-center ">
-                <img src="img/footer/contact_1.png" class="w-xxs h-xxs">
-                <p class="text-xl mb-6">project@easyapply.fr</p>
+            <div class="flex items-center my-2">
+                <img src="img/footer/contact_1.png" class="w-xxs">
+                <p class="text-xl mx-4">project@easyapply.fr</p>
             </div>
-            <div class="flex items-center">
-                <img src="img/footer/contact_1.png" class="w-xxs h-xxs">
-                <p class="text-xl mb-6">06.11.06.56.01</p>
+            <div class="flex items-center my-2">
+                <img src="img/footer/contact_2.png" class="w-xxs">
+                <p class="text-xl mx-4">06.11.06.56.01</p>
             </div>
         </div>
         <div class=" flex flex-col justify-center">
@@ -30,7 +30,7 @@
         </a>
 
     </div>
-    <div class=" border-solid border-t-2 border-zinc-700 h-sm mx-96 mt-20">
+    <div class=" border-solid border-t-2 border-zinc-700 h-xs mx-96 mt-20">
 
     </div>
 </footer>

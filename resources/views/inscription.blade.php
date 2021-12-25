@@ -2,7 +2,7 @@
 
 @section('content')
 <body class="bg-slate-200">
-    <section class=" max-h-screen mt-28 text-xl flex items-center flex-col ">
+    <section class=" mt-28 text-xl flex items-center flex-col ">
         <div class=" w-sm h-sm bg-blue-500 rounded-full mb-6">
         </div>
         <h1 class=" text-center text-3xl ">Inscrivez-vous</h1>

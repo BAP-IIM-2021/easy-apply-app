@@ -12,3 +12,8 @@
 html{
     font-size: 11px;
 }
+@media (max-width: 1540px) {
+    html{
+        font-size: 10px;
+    }
+}

@@ -5,8 +5,11 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
+    
 
     width: {
+      
+      'xxs': '2rem',
       'xs': '5rem',
       'sm': '10rem',
       'tiny': '20rem',
@@ -21,7 +24,8 @@ module.exports = {
       '7xl': '300rem',
     },
     height: {
-      'xs': '5rem',
+      'xxs': '2rem',
+      'xs': '3rem',
       'sm': '10rem',
       'tiny': '20rem',
       'base': '25rem',
@@ -36,7 +40,12 @@ module.exports = {
       'screen': '100vh',
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        'light-black': '#202020',
+        'light-blue': '#38B6FF',
+      },
+    },
   },
   plugins: [],
 }

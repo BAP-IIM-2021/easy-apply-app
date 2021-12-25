@@ -40,6 +40,8 @@ module.exports = {
       'screen': '100vh',
     },
 
+    
+
     extend: {
       colors: {
         'light-black': '#202020',

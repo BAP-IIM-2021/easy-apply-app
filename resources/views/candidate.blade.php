@@ -1,5 +1,5 @@
 @extends('layout')
-
+@include('partials/header')
 @section('content')
 
 <section class=" bg-light-blue p-12 text-xl">

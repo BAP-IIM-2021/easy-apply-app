@@ -7,7 +7,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Easy Apply</title>
 </head>
-<body>
+<body class="container bg-slate-200">
     @yield('content')
 
     @include('partials/footer')

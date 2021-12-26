@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-<body class="bg-slate-200">
     <section class=" mt-28 text-xl flex items-center flex-col ">
         <div class=" w-sm h-sm rounded-full mb-6 bg-gray-50">
             <img src="img/logo.png" alt="logo">

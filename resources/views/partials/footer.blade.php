@@ -15,7 +15,7 @@
         <div class=" flex flex-col justify-center">
             <h3 class="font-bold text-2xl mb-10">S'inscrire</h3>
             <a href="" class="text-xl mb-6">En temps qu'entreprise</a>
-            <a href="" class="text-xl mb-6">En temps que chercheur d'emploi</a>
+            <a href="{{ route ('inscription') }}" class="text-xl mb-6">En temps que chercheur d'emploi</a>
         </div>
     </div>
     <div class="flex justify-center">

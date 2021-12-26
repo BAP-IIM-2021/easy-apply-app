@@ -11,5 +11,9 @@ class LoginController extends Controller{
     public function login(){
         return view('login');
     }
+
+    public function candidate(){
+        return view('candidate');
+    }
 }
 

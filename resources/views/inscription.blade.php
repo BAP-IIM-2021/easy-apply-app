@@ -6,9 +6,8 @@
             <img src="img/logo.png" alt="logo">
         </div>
         <h1 class=" text-center text-3xl ">Inscrivez-vous</h1>
-        <form class="flex flex-col w-5xl px-64 justify-center items-center" action="POST">
-
-            <div id="content_inscription_1" class="flex justify-center items-center h-xl">
+        <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" action="POST">
+            <div id="content_inscription_1" class="flex xl:flex-row flex-col justify-center items-center xl:h-xl">
                 <div class="flex flex-wrap" >
                     <div class="flex flex-col items-start mx-16 my-4">
                         <label for="last_name"class="my-2" >Nom</label>
@@ -46,13 +45,13 @@
                 <div>
                     <div class="flex flex-col items-start">
                         <label for="img" class="my-4">Photo</label>
-                        <input type="file" class=" rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white " name="img">
+                        <input type="file" class=" max-w-sm xl:max-w-2xl rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white " name="img">
                     </div>
                 </div>
             </div>
 
 
-            <div id="content_inscription_2" class="justify-center items-center hidden bg">
+            <div id="content_inscription_2" class="xl:flex-row flex-col justify-center items-center hidden bg">
                 <div class="flex flex-wrap" >
                     <div class="flex flex-col items-start mx-16 my-4">
                         <label for="website"class="my-2" >Site Internet</label>
@@ -105,10 +104,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex w-tiny justify-end text-white">
+                        <div class="flex w-tiny justify-center text-white">
                             <input value="Supprimer -" type="button" id="dlt_ss" class="cursor-pointer grayscale shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
                             <input value="Ajouter +" type="button" id="add_ss" class="cursor-pointer shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
-                            
                         </div>
                     </div>
                     <div class="flex flex-col items-start mx-16 my-4">
@@ -163,7 +161,7 @@
                 <div>
                     <div class="flex flex-col items-start">
                         <label for="img" class="my-4">CV</label>
-                        <input type="file" class=" rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white " name="img">
+                        <input type="file" class=" max-w-sm xl:max-w-2xl rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white " name="img">
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
         <img src="img/logo.png" alt="logo">
     </div>
     <h1 class=" text-center text-3xl ">Connectez-vous</h1>
-    <form class="flex flex-col w-5xl px-64 items-center" action="POST">
+    <form class="flex flex-col xl:w-5xl xl:px-64 items-center" action="POST">
         <div id="content_inscription_1" class="flex justify-center items-center h-base ">
             <div class="flex flex-col" >
                 <div class="flex flex-col items-start mx-16 my-4">

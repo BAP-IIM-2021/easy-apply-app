@@ -1,4 +1,4 @@
-<header class="w-screen bg-white flex items-center justify-between px-10">
+<header class="w-full bg-white flex items-center justify-between px-10">
     <div class="w-1/2">
         <img src="img/logo.png" alt="logo" class=" h-medium">
     </div>
@@ -11,7 +11,4 @@
             </li>
         </ul>
     </div>
-
-
-
 </header>

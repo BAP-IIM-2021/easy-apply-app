@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 
+// Redirects to home page
+Route::get('/', function(){
+  return view('home');
+});
 
 // Redirects to the registration
 Route::get('/inscription', [LoginController::class, 'inscription'])->name('inscription');
@@ -11,4 +15,4 @@ Route::get('/inscription', [LoginController::class, 'inscription'])->name('inscr
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 // Redirects to the candidate page
-Route::get('/', [LoginController::class, 'candidate'])->name('candidate');
+Route::get('/candidate', [LoginController::class, 'candidate'])->name('candidate');

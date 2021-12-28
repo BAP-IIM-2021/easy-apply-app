@@ -35,5 +35,5 @@
     </form>
 </section>
 
-    @endsection
+@endsection
     

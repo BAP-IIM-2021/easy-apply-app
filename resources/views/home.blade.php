@@ -3,11 +3,11 @@
 
 @section('content')
 
-<script src="https://cdn.tailwindcss.com"></script>
 
-<div class="bg-cyan-400 block text-white p-24 pb-48">
+
+<div class="bg-light-blue block text-white p-24 pb-48">
     <h1 class="text-5xl">Et si on postulait autrement ?</h1><br>
-    <h3 class="text-3xl font-bold  py-2">Favorisons la rencontre entre l'offre et la demande d'emploi</h3>
+    <h3 class="text-3xl font-bold py-2">Favorisons la rencontre entre l'offre et la demande d'emploi</h3>
     <p class="text-white">Optimisez votre recrutement à moindre coût grâce à notre service tout en un : publications illimitées d’offres, matching et scoring des</p>
     <p class="text-white">candidats, gestion automatisé des candidatures.</p>
 </div>
@@ -29,7 +29,7 @@
             <h3 class="uppercase text-center text-2xl font-bold mt-16">Easy Apply</h3>
             <p class="text-center">Application de recrutement pas système de matching</p>
 
-            <h4 class="text-cyan-400 text-2xl mt-14">Compétences :</h4>
+            <h4 class="text-light-blue text-2xl mt-14">Compétences :</h4>
             <p class="mt-5"><span class="font-bold">Offres illimités :</span> les publications d'offres d'emploi sont illimitées</p>
             <p class="mt-5"><span class="font-bold">Visibilité de l'offre :</span> votre offre est proposée aux profils que vous cherchez et à ceux intéressés par vos mission</p>
             <p class="mt-5"><span class="font-bold">Gain de temps :</span> les candidats sont classées automatiquement selon vos critères.</p>
@@ -47,7 +47,7 @@
         <h3 class="uppercase text-center text-2xl font-bold mt-16">Easy Apply</h3>
         <p class="text-center">Application de recrutement pas système de matching</p>
 
-        <h4 class="text-cyan-400 text-2xl mt-14">Compétences :</h4>
+        <h4 class="text-light-blue text-2xl mt-14">Compétences :</h4>
         <p class="mt-5"><span class="font-bold">Offres illimités :</span> les publications d'offres d'emploi sont illimitées</p>
         <p class="mt-5"><span class="font-bold">Visibilité de l'offre :</span> votre offre est proposée aux profils que vous cherchez et à ceux intéressés par vos mission</p>
         <p class="mt-5"><span class="font-bold">Gain de temps :</span> les candidats sont classées automatiquement selon vos critères.</p>
@@ -62,7 +62,7 @@
         <h3 class="uppercase text-center text-2xl font-bold mt-16">Easy Apply</h3>
         <p class="text-center">Application de recrutement pas système de matching</p>
 
-        <h4 class="text-cyan-400 text-2xl mt-14">Compétences :</h4>
+        <h4 class="text-light-blue text-2xl mt-14">Compétences :</h4>
         <p class="mt-5"><span class="font-bold">Offres illimités :</span> les publications d'offres d'emploi sont illimitées</p>
         <p class="mt-5"><span class="font-bold">Visibilité de l'offre :</span> votre offre est proposée aux profils que vous cherchez et à ceux intéressés par vos mission</p>
         <p class="mt-5"><span class="font-bold">Gain de temps :</span> les candidats sont classées automatiquement selon vos critères.</p>
@@ -77,7 +77,7 @@
         <h3 class="uppercase text-center text-2xl font-bold mt-16">Easy Apply</h3>
         <p class="text-center">Application de recrutement pas système de matching</p>
 
-        <h4 class="text-cyan-400 text-2xl mt-14">Compétences :</h4>
+        <h4 class="text-light-blue text-2xl mt-14">Compétences :</h4>
         <p class="mt-5"><span class="font-bold">Offres illimités :</span> les publications d'offres d'emploi sont illimitées</p>
         <p class="mt-5"><span class="font-bold">Visibilité de l'offre :</span> votre offre est proposée aux profils que vous cherchez et à ceux intéressés par vos mission</p>
         <p class="mt-5"><span class="font-bold">Gain de temps :</span> les candidats sont classées automatiquement selon vos critères.</p>
@@ -92,7 +92,7 @@
         <h3 class="uppercase text-center text-2xl font-bold mt-16">Easy Apply</h3>
         <p class="text-center">Application de recrutement pas système de matching</p>
 
-        <h4 class="text-cyan-400 text-2xl mt-14">Compétences :</h4>
+        <h4 class="text-light-blue text-2xl mt-14">Compétences :</h4>
         <p class="mt-5"><span class="font-bold">Offres illimités :</span> les publications d'offres d'emploi sont illimitées</p>
         <p class="mt-5"><span class="font-bold">Visibilité de l'offre :</span> votre offre est proposée aux profils que vous cherchez et à ceux intéressés par vos mission</p>
         <p class="mt-5"><span class="font-bold">Gain de temps :</span> les candidats sont classées automatiquement selon vos critères.</p>
@@ -100,7 +100,7 @@
     </div>
 </section>
 
-<article class="bg-cyan-400 text-white m-36 p-8 h-80 mt-40">
+<article class="bg-light-blue text-white m-36 p-8 h-80 mt-40">
     <h3 class="text-3xl mx-10 my-5">Vous aimeriez voir votre entreprise sur notre site ?</h3>
     <p class="font-bold text-2xl text-center mt-20">Créez votre page d'entreprise en appuyant simplement ici !</p><br>
     <p  class="text-center"><a href="" class="rounded-full bg-white text-black py-2 px-4 text-center">Page d'entreprise</a></p>

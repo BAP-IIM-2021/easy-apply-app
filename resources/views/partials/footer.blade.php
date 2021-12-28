@@ -20,13 +20,13 @@
     </div>
     <div class="flex justify-center">
         <a class="mx-8" href="">
-            <img class="h-xs  object-contain" src="img/footer/ig.png" alt="instagram">
+            <i class="fab fa-instagram fa-4x"></i>
         </a>
         <a class="mx-8" href="">
-            <img class=" h-xs object-contain" src="img/footer/linkedin.png" alt="LinkedIn">
+        <i class="fab fa-linkedin fa-4x"></i>
         </a>
         <a class="mx-8" href="">
-            <img class="h-xs object-contain" src="img/footer/fb.png" alt="facebook">
+            <i class="fab fa-facebook-square fa-4x"></i>
         </a>
 
     </div>

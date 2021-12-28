@@ -3,6 +3,15 @@
 
 @section('content')
 
+<script src="https://cdn.tailwindcss.com"></script>
+
+<div class="bg-cyan-400 block text-white p-24 pb-48">
+    <h1 class="text-5xl">Et si on postulait autrement ?</h1><br>
+    <h3 class="text-3xl font-bold  py-2">Favorisons la rencontre entre l'offre et la demande d'emploi</h3>
+    <p class="text-white">Optimisez votre recrutement à moindre coût grâce à notre service tout en un : publications illimitées d’offres, matching et scoring des</p>
+    <p class="text-white">candidats, gestion automatisé des candidatures.</p>
+</div>
+
 <article class="mt-36">
     <h2 class="text-center text-6xl mb-32"> Qui sommes-nous ?</h2>
 

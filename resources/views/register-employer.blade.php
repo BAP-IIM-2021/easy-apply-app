@@ -72,9 +72,9 @@
   
       </section>
   
-      <section class="flex flex-col items-start">
+      <section class="flex flex-col items-start m-auto">
           <label for="img" class="my-4">Logo</label>
-          <input type="file" class=" max-w-sm xl:max-w-2xl rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white " name="img">
+          <input type="file" class="max-w-sm xl:max-w-2xl rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white" name="img">
       </section>
     </main>
 

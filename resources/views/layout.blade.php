@@ -10,8 +10,6 @@
     <title>Easy Apply</title>
 </head>
 <body class="bg-slate-200">
-    @include('partials/header')
-    
     @yield('content')
 
     @include('partials/footer')

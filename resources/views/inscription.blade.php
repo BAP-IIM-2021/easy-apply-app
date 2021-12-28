@@ -61,18 +61,26 @@
                         <label for="linkedIn" class="my-2" >LinkedIn</label>
                         <input class="btn-primary" type="text" placeholder="LinkedIn" name="linkedIn">
                     </div>
-                    <div class="flex flex-col items-start mx-16 my-4">
+                    <div id ="container_exp" class="mx-16 mt-4"> <!-- Container Expériences -->
                         <label for="experience" class="my-2">Expériences</label>
-                        <select class="btn-primary" type="text" placeholder="Site" name="experience"> 
-                            <option value="">--Sélectionnez l'option--</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
+                        <div class="content">
+                            <div class="options flex flex-col items-start mt-4">
+                                <select class="btn-primary" type="text" placeholder="Site" name="experience"> 
+                                    <option value="">--Sélectionnez l'option--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex w-tiny justify-center text-white">
+                            <input value="Supprimer -" type="button" id="dlt_ss" class="dlt_option cursor-pointer grayscale shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
+                            <input value="Ajouter +" type="button" id="add_ss" class="add_option cursor-pointer shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
+                        </div>
                     </div>
-                    <div id="ss_container" class=" mx-16 mt-4">
+                    <div id ="container_ss" class=" mx-16 mt-4"> <!-- Container Soft skills -->
                         <label for="soft_skills">Soft Skills</label>
-                        <div id="ss_content">
-                            <div id="ss" class="flex flex-col items-start mt-4">
+                        <div class="content">
+                            <div class="options flex flex-col items-start mt-4">
                                 <select class="btn-primary" type="text" placeholder="Site" name="soft_skills"> 
                                     <option value="">--Sélectionnez l'option--</option>
                                     <option value="">La prise de décision</option>
@@ -105,8 +113,8 @@
                             </div>
                         </div>
                         <div class="flex w-tiny justify-center text-white">
-                            <input value="Supprimer -" type="button" id="dlt_ss" class="cursor-pointer grayscale shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
-                            <input value="Ajouter +" type="button" id="add_ss" class="cursor-pointer shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
+                            <input value="Supprimer -" type="button" id="dlt_ss" class="dlt_option cursor-pointer grayscale shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
+                            <input value="Ajouter +" type="button" id="add_ss" class="add_option cursor-pointer shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
                         </div>
                     </div>
                     <div class="flex flex-col items-start mx-16 my-4">
@@ -116,42 +124,51 @@
                             
                         </select>
                     </div>
-                    <div class="flex flex-col items-start mx-16 my-4">
+                    
+                    <div id ="container_form" class=" mx-16 mt-4"> <!-- Container Formation -->
                         <label for="formation" class="my-2">Formation</label>
-                        <select class="btn-primary" type="text" placeholder="Site" name="formation"> 
-                            <option value="">--Sélectionnez l'option--</option>
-                            <option value="">Agriculture</option>
-                            <option value="">Animation</option>
-                            <option value="">Animation 2D/3D</option>
-                            <option value="">Art</option>
-                            <option value="">Beauté</option>
-                            <option value="">Bien-être</option>
-                            <option value="">Commerce</option>
-                            <option value="">Communication</option>
-                            <option value="">Comptabilité</option>
-                            <option value="">Culture</option>
-                            <option value="">Design</option>
-                            <option value="">Droit</option>
-                            <option value="">Environnement</option>
-                            <option value="">Finance</option>
-                            <option value="">Fonction publique</option>
-                            <option value="">Hôtellerie</option>
-                            <option value="">Image</option>
-                            <option value="">Informatique</option>
-                            <option value="">Ingénierie</option>
-                            <option value="">Langues</option>
-                            <option value="">Management</option>
-                            <option value="">Marketing</option>
-                            <option value="">Mode</option>
-                            <option value="">Santé</option>
-                            <option value="">Sciences</option>
-                            <option value="">Sciences Humaines</option>
-                            <option value="">Sciences Politiques</option>
-                            <option value="">Sport</option>
-                            <option value="">Social</option>
-                            <option value="">Son</option>
-                            <option value="">Tourisme</option>
-                        </select>
+                        <div class="content">
+                            <div class=" options flex flex-col items-start mt-4">
+                                <select class="btn-primary" type="text" placeholder="Site" name="formation"> 
+                                    <option value="">--Sélectionnez l'option--</option>
+                                    <option value="">Agriculture</option>
+                                    <option value="">Animation</option>
+                                    <option value="">Animation 2D/3D</option>
+                                    <option value="">Art</option>
+                                    <option value="">Beauté</option>
+                                    <option value="">Bien-être</option>
+                                    <option value="">Commerce</option>
+                                    <option value="">Communication</option>
+                                    <option value="">Comptabilité</option>
+                                    <option value="">Culture</option>
+                                    <option value="">Design</option>
+                                    <option value="">Droit</option>
+                                    <option value="">Environnement</option>
+                                    <option value="">Finance</option>
+                                    <option value="">Fonction publique</option>
+                                    <option value="">Hôtellerie</option>
+                                    <option value="">Image</option>
+                                    <option value="">Informatique</option>
+                                    <option value="">Ingénierie</option>
+                                    <option value="">Langues</option>
+                                    <option value="">Management</option>
+                                    <option value="">Marketing</option>
+                                    <option value="">Mode</option>
+                                    <option value="">Santé</option>
+                                    <option value="">Sciences</option>
+                                    <option value="">Sciences Humaines</option>
+                                    <option value="">Sciences Politiques</option>
+                                    <option value="">Sport</option>
+                                    <option value="">Social</option>
+                                    <option value="">Son</option>
+                                    <option value="">Tourisme</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex w-tiny justify-center text-white">
+                            <input value="Supprimer -" type="button" id="dlt_ss" class="dlt_option cursor-pointer grayscale shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
+                            <input value="Ajouter +" type="button" id="add_ss" class="add_option cursor-pointer shadow-md m-2 px-4 py-2 rounded-lg bg-light-blue">
+                        </div>
                     </div>
                     <div class="flex flex-col items-start mx-16 my-4">
                         <label for="diploma" class="my-2" >Diplômes</label>

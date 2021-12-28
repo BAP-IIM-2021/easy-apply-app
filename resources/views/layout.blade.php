@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/2b02a79d23.js" crossorigin="anonymous"></script>
     <title>Easy Apply</title>
 </head>
-<body class="bg-slate-200">
+<body class="bg-white-cream">
     @yield('content')
 
     @include('partials/footer')

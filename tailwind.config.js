@@ -7,8 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'light-black': '#202020',
-        'light-blue': '#38B6FF',
+        'primary': '#38B6FF',
+        'gray': '#707070',
+        'white-cream': '#fef8f2',
+        'black-mat': '#202020',
+        
+        'light-blue': '#38B6FF', // a retirer une fois tout changer en primary
       },
       width: {
         'xxxs': '1rem',
@@ -28,7 +32,6 @@ module.exports = {
         '1/2': '50%',
         '1/3': '33%',
         '2/3' :'66%',
-        
       },
       height: {
         'xxxs': '1rem',

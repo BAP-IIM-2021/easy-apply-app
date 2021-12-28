@@ -1,4 +1,4 @@
-<footer class="xl:w-full bg-light-black mt-28 text-white pt-20">
+<footer class="xl:w-full bg-black-mat mt-28 text-white pt-20">
     <div class="flex xl:flex-row flex-col xl:justify-around items-center xl:mx-64 mb-24" >
         <img src="img/logo.png" alt="easy-apply" class="object-contain max-w-sm">
         <div class=" flex flex-col text-center xl:text-left">
@@ -19,14 +19,14 @@
         </div>
     </div>
     <div class="flex justify-center">
-        <a class="mx-8" href="">
-            <i class="fab fa-instagram fa-4x"></i>
+        <a class="mx-8 hover:text-light-blue" href="">
+            <i class="fab fa-instagram fa-3x"></i>
         </a>
-        <a class="mx-8" href="">
-        <i class="fab fa-linkedin fa-4x"></i>
+        <a class="mx-8 hover:text-light-blue" href="">
+        <i class="fab fa-linkedin fa-3x"></i>
         </a>
-        <a class="mx-8" href="">
-            <i class="fab fa-facebook-square fa-4x"></i>
+        <a class="mx-8 hover:text-light-blue" href="">
+            <i class="fab fa-facebook-square fa-3x"></i>
         </a>
 
     </div>

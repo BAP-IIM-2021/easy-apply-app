@@ -3,22 +3,21 @@
 @tailwind utilities;
 
 @layer components {
-    .btn-primary {
-        @apply py-2 px-4 bg-white rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 w-tiny;
-    }
-    
+  .btn-primary {
+    @apply py-2 px-4 bg-white rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 w-tiny;
+  }
 }
 
-html{
-    font-size: 11px;
+html{ /* Size for desktop */
+  font-size: 14px;
 }
-@media (max-width: 1540px) {
-    html{
-        font-size: 10px;
-    }
+@media (max-width: 1540px) { /* Size for tablets */
+  html{
+      font-size: 10px;
+  }
 }
-@media (max-width: 800px) {
-    html{
-        font-size: 14px;
-    }
+@media (max-width: 800px) { /* Size for mobile */
+  html{
+      font-size: 14px;
+  }
 }

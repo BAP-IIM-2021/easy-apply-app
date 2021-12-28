@@ -66,6 +66,13 @@
           <div class=" options flex flex-col items-start mt-4">
             <select class="btn-primary" type="text" name="company-size"> 
               <option value="">--Sélectionnez l'option--</option>
+              <option value="">Micro</option>
+              <option value="">TPE</option>
+              <option value="">PE</option>
+              <option value="">ME</option>
+              <option value="">ETI</option>
+              <option value="">GE</option>
+              <option value="">TGE</option>
             </select>
           </div>
         </div>

@@ -8,10 +8,15 @@ Route::get('/', function(){
   return view('home');
 });
 
-// Redirects to the registration
+// Redirect to employer registration
+Route::get('/register-employer', function () {
+  return view('register-employer');
+});
+
+// Redirects to candidate registration
 Route::get('/inscription', [LoginController::class, 'inscription'])->name('inscription');
 
-// Redirects to the login page
+// Redirects to candidate login page
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 // Redirects to the candidate page

@@ -188,7 +188,7 @@
                 <input type="submit" value="Inscription"class=" w-sm mt-12 mb-1 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
                 <a id="back_inscription" class=" w-sm cursor-pointer text-gray-500 text-center mb-4 hover:text-black">Retour </a>
             </div>
-                <p>Déjà un compte Easy Apply ? <a href="{{ route ('login') }}" class=" text-light-blue font-bold">Connexion</a></p>
+                <p>Déjà un compte Easy Apply ? <a href="/login" class=" text-light-blue font-bold">Connexion</a></p>
         </form>
     </section>
 </body>

@@ -508,9 +508,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-2 {
   margin: 0.5rem;
 }
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.m-10 {
+  margin: 2.5rem;
 }
 .mx-16 {
   margin-left: 4rem;
@@ -523,6 +522,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .mx-2 {
   margin-left: 0.5rem;
@@ -555,10 +562,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-96 {
   margin-left: 24rem;
   margin-right: 24rem;
-}
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 .mt-36 {
   margin-top: 9rem;
@@ -620,12 +623,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-20 {
   margin-top: 5rem;
 }
-.mr-10 {
-  margin-right: 2.5rem;
-}
-.ml-10 {
-  margin-left: 2.5rem;
-}
 .block {
   display: block;
 }
@@ -634,6 +631,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hidden {
   display: none;
+}
+.h-32 {
+  height: 8rem;
 }
 .h-full {
   height: 100%;
@@ -655,17 +655,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-medium {
   height: 12rem;
-}
-.h-24 {
-  height: 6rem;
-}
-.h-32 {
-  height: 8rem;
-}
-.min-h-fit {
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
 }
 .w-sm {
   width: 10rem;
@@ -703,6 +692,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .resize-none {
   resize: none;
+}
+.list-decimal {
+  list-style-type: decimal;
 }
 .flex-col {
   flex-direction: column;
@@ -789,10 +781,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
 }
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -808,6 +796,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-4 {
   padding: 1rem;
+}
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -837,37 +833,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.py-48 {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-.px-52 {
-  padding-left: 13rem;
-  padding-right: 13rem;
-}
 .pb-48 {
   padding-bottom: 12rem;
 }
 .pt-20 {
   padding-top: 5rem;
 }
-.pb-20 {
-  padding-bottom: 5rem;
-}
 .text-center {
   text-align: center;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-5xl {
   font-size: 3rem;
@@ -888,10 +865,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -994,19 +967,14 @@ html{ /* Size for desktop */
 }
 @media (min-width: 1280px) {
 
-  .xl\:mx-64 {
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-
   .xl\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
   }
 
-  .xl\:mx-80 {
-    margin-left: 20rem;
-    margin-right: 20rem;
+  .xl\:mx-64 {
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
 
   .xl\:h-xl {
@@ -1036,16 +1004,6 @@ html{ /* Size for desktop */
   .xl\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;
-  }
-
-  .xl\:px-72 {
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-
-  .xl\:px-96 {
-    padding-left: 24rem;
-    padding-right: 24rem;
   }
 
   .xl\:text-left {

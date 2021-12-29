@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class LoginController extends Controller{
 
     public function inscription(){
-        return view('inscription');
+        return view('candidate/register');
     }
 
     public function login(){
@@ -13,7 +13,7 @@ class LoginController extends Controller{
     }
 
     public function candidate(){
-        return view('candidate');
+        return view('candidate/profile');
     }
 }
 

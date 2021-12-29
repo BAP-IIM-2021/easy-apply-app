@@ -4,13 +4,18 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 
 // Redirects to home page
-Route::get('/', function(){
+Route::get('/', function() {
   return view('home');
 });
 
 // Redirect to employer registration
-Route::get('/register-employer', function () {
+Route::get('/register-employer', function() {
   return view('register-employer');
+});
+
+// Redirect to employer profile
+Route::get('/employer', function() {
+  return view('profile-employer');
 });
 
 // Redirects to candidate registration

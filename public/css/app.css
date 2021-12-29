@@ -907,6 +907,10 @@ html{ /* Size for desktop */
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(56 182 255 / var(--tw-text-opacity));
+}
 .hover\:text-light-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(56 182 255 / var(--tw-text-opacity));

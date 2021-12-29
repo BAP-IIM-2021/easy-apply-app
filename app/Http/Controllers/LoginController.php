@@ -15,5 +15,9 @@ class LoginController extends Controller{
     public function candidate(){
         return view('candidate/profile');
     }
+
+    public function createNewJob(){
+        return view('create-job');
+    }
 }
 

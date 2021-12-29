@@ -21,3 +21,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 // Redirects to the candidate page
 Route::get('/candidate', [LoginController::class, 'candidate'])->name('candidate');
+
+// Redirects to the candidate page
+Route::get('/create-new-job', [LoginController::class, 'createNewJob'])->name('create-new-job');

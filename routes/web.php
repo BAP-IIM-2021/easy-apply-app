@@ -3,18 +3,21 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// Redirects to home page
+Route::get('/', function(){
+  return view('home');
+});
 
-Route::get('/', [LoginController::class, 'index']);
-// Route::get('/register', [LoginController::class, 'register']);
-// Route::get('/login', [LoginController::class, 'login']);
-    
+// Redirect to employer registration
+Route::get('/register-employer', function () {
+  return view('register-employer');
+});
+
+// Redirects to candidate registration
+Route::get('/inscription', [LoginController::class, 'inscription'])->name('inscription');
+
+// Redirects to candidate login page
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+
+// Redirects to the candidate page
+Route::get('/candidate', [LoginController::class, 'candidate'])->name('candidate');

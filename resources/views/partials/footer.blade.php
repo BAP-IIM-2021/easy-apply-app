@@ -13,24 +13,24 @@
             </div>
         </div>
         <div class=" flex flex-col justify-center text-center xl:text-left">
-            <h3 class="font-bold text-2xl mb-10 ">S'inscrire</h3>
-            <a href="" class="text-xl mb-6">En temps qu'entreprise</a>
-            <a href="{{ route ('inscription') }}" class="text-xl mb-6">En temps que chercheur d'emploi</a>
+            <h3 class="font-bold text-2xl mb-10">S'inscrire</h3>
+            <a href="/register-candidate" class="text-xl mb-6 hover:text-primary">En temps qu'entreprise</a>
+            <a href="/register-employer" class="text-xl mb-6 hover:text-primary">En temps que chercheur d'emploi</a>
         </div>
     </div>
     <div class="flex justify-center">
-        <a class="mx-8 hover:text-light-blue" href="">
+        <a class="mx-8 hover:text-primary" href="">
             <i class="fab fa-instagram fa-3x"></i>
         </a>
-        <a class="mx-8 hover:text-light-blue" href="">
+        <a class="mx-8 hover:text-primary" href="">
         <i class="fab fa-linkedin fa-3x"></i>
         </a>
-        <a class="mx-8 hover:text-light-blue" href="">
+        <a class="mx-8 hover:text-primary" href="">
             <i class="fab fa-facebook-square fa-3x"></i>
         </a>
 
     </div>
     <div class=" border-solid border-t-2 border-zinc-700 h-xs mx-96 mt-20">
-
+        
     </div>
 </footer>

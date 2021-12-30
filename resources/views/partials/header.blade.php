@@ -7,7 +7,7 @@
         <a href="" class="text-xl hover:text-light-blue">Accueil</a>
       </li>
       <li>
-        <a href="{{ route('login') }}" class=" w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 cursor-pointer text-center">Se connecter</a>
+        <a href="/login" class=" w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 cursor-pointer text-center">Se connecter</a>
       </li>
     </ul>
   </div>

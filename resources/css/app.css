@@ -8,9 +8,11 @@
   }
 }
 
+
 html{ /* Size for desktop */
   font-size: 14px;
 }
+
 @media (max-width: 1540px) { /* Size for tablets */
   html{
     font-size: 10px;

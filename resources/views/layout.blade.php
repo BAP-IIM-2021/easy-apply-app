@@ -8,9 +8,9 @@
     <script src="https://kit.fontawesome.com/2b02a79d23.js" crossorigin="anonymous"></script>
     <title>Easy Apply</title>
 </head>
-<body class="bg-white-cream">
+<body class="bg-white-cream w-full h-auto">
     @yield('content')
-
+    
     @include('partials/footer')
     <script src="./js/app.js"></script>
 </body>

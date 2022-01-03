@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\EmployerController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\CandidateController;
 
 /*------------------------------------------------------------------------ 
                   All About Common pages
@@ -15,6 +16,9 @@ Route::get('/', HomeController::class );
 
 // Redirects to login page
 Route::get('/login', LoginController::class );
+
+// Redirects to register page
+Route::get('/register', RegisterController::class );
 
 /*------------------------------------------------------------------------ 
                   All About Candidate pages

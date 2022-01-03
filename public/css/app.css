@@ -817,6 +817,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .uppercase {
   text-transform: uppercase;
 }
+.leading-tight {
+  line-height: 1.25;
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -861,6 +864,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 html{ /* Size for desktop */
   font-size: 14px;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+  padding-bottom: 5px;
+
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  padding-bottom: 5px;
 }
 
 @media (max-width: 1540px) { /* Size for tablets */

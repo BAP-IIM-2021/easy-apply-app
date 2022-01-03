@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\EmployerController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\SessionController;
 
 /*------------------------------------------------------------------------ 
                   All About Common pages
@@ -50,3 +51,6 @@ Route::get('/employer', [EmployerController::class, 'profile']);
 
 // Redirects to the New Job page
 Route::get('/employer/new-job', [EmployerController::class, 'newJob']);
+
+
+Route::post('/login', [SessionController::class, 'store']);

@@ -18,7 +18,7 @@ Route::get('/', HomeController::class );
 Route::get('/login', LoginController::class );
 
 // Redirects to register page
-Route::get('/register', [RegisterController::class, 'register']);
+Route::get('/register', [RegisterController::class, 'create']);
 // To get data user insert in the page for he's register
 Route::post('/register', [RegisterController::class, 'store']);
 
@@ -38,6 +38,7 @@ Route::get('/candidate', [CandidateController::class, 'profile']);
 
 // Redirects to Employer registration
 Route::get('/register-employer', [EmployerController::class, 'create']);
+// To get data employer insert in the page
 Route::post('/register-employer', [EmployerController::class, 'store']);
 
 // Redirects to the Employer page

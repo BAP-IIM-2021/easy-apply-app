@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-<section class="w-full mt-28 text-xl flex items-center flex-col bg-red-100">
+<section class="w-full mt-28 text-xl flex items-center flex-col">
 
   <div class="w-sm h-sm rounded-full mb-6 bg-gray-50">
     <img src="img/logo.png" alt="logo">
@@ -26,7 +26,12 @@
           <div class=" options flex flex-col items-start mt-4">
             <select class="btn-primary" type="text" name="company-activity"> 
               <option value="">--Sélectionnez l'option--</option>
-              {{-- TODO: foreach option --}}
+              @php
+                $businessSector = App\Models\BusinessSector::all()
+              @endphp
+              @foreach ($businessSector as $sector)
+                <option value="{{ $sector->id }}">{{ $sector->label }}</option>
+              @endforeach
             </select>
           </div>
         </div>
@@ -36,7 +41,12 @@
           <div class=" options flex flex-col items-start mt-4">
             <select class="btn-primary" type="text" name="company-size"> 
               <option value="">--Sélectionnez l'option--</option>
-              {{-- TODO: foreach option --}}
+              @php
+                $companySize = App\Models\CompanySize::all()
+              @endphp
+              @foreach ($companySize as $size)
+                <option value="{{ $size->id }}">{{ $size->label }}</option>
+              @endforeach
             </select>
           </div>
         </div>
@@ -54,11 +64,14 @@
         </div>
       </section>
     </main>
-
     <input type="submit" value="Inscription"class="w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
 
   </form>
   <p>Déjà un compte Easy Apply ? <a href="/login" class=" text-light-blue">Connexion</a></p>
 </section>
+
+  @php
+    
+  @endphp
 
 @endsection

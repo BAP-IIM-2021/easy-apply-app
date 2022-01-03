@@ -18,7 +18,9 @@ Route::get('/', HomeController::class );
 Route::get('/login', LoginController::class );
 
 // Redirects to register page
-Route::get('/register', RegisterController::class );
+Route::get('/register', [RegisterController::class, 'create']);
+// To get data user insert in the page for he's register
+Route::post('/register', [RegisterController::class, 'store']);
 
 /*------------------------------------------------------------------------ 
                   All About Candidate pages

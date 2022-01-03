@@ -13,7 +13,7 @@ class Job extends Model
         'label', 
         'salary',
         'description',
-        'employee_id',
+        'employer_id',
         'location_id',
         'working_mode_id',
         'contract_type_id',
@@ -22,8 +22,8 @@ class Job extends Model
     ];
 
 
-    public function employee(){
-        return $this->belongsTo(Employee::class);
+    public function employer(){
+        return $this->belongsTo(Employer::class);
     }
 
     public function location(){

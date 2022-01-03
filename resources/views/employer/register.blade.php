@@ -9,11 +9,15 @@
 
   <h1 class="text-center text-3xl ">Inscrivez-vous</h1>
   <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" action="POST">
+    @csrf {{-- Token check --}}
     <main class="flex flex-col xl:flex-row">
       <section>
         <div class="flex flex-col items-start mx-16 my-4">
           <label for="company-name"class="my-2" >Nom de l'entreprise</label>
           <input class="btn-primary" type="text" placeholder="Nom de l'entreprise" name="company-name">
+          @error('company-name')
+        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+      @enderror
         </div>
 
         <div class="flex flex-col items-start mx-16 my-4">

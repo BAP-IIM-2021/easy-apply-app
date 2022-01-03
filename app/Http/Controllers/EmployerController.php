@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 
 class EmployerController extends Controller
 {
-  public function register() {
+  public function create() {
     return view('employer/register');
+  }
+
+  public function store() {
+    $attributes = request()-> validate ([
+      
+    ]);
   }
 
   public function profile() {

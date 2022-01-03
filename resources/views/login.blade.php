@@ -31,7 +31,7 @@
         <div id="login" class="flex-col">
             <input type="submit" value="Connexion" class=" w-sm mb-20 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
         </div>
-            <p>Nouveau sur Easy Apply ? <a href="{{ route ('inscription') }}" class=" text-light-blue font-bold">S'inscrire</a></p>
+            <p>Nouveau sur Easy Apply ? <a href="/register-candidate" class=" text-light-blue font-bold">S'inscrire</a></p>
     </form>
 </section>
 

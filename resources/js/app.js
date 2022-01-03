@@ -19,8 +19,6 @@ document.getElementById('back_inscription').addEventListener('click', () =>{
 // -------------------------------------------------------------------
 
 
-// B
-
 const btns_add = document.querySelectorAll(".add_option");
     btns_add.forEach((btn) =>{
         btn.addEventListener('click', function(){
@@ -34,6 +32,7 @@ const btns_dlt = document.querySelectorAll(".dlt_option");
             DltOption(container)});
         });
 
+        
 // Add Options Inscription
 function AddOption(container){
     const add = document.getElementById(container).getElementsByClassName('add_option')[0];

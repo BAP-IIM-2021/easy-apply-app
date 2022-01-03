@@ -2076,7 +2076,6 @@ document.getElementById('back_inscription').addEventListener('click', function (
 }); // -------------------------------------------------------------------
 // Inscription options 
 // -------------------------------------------------------------------
-// B
 
 var btns_add = document.querySelectorAll(".add_option");
 btns_add.forEach(function (btn) {

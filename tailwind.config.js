@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Helvetica"', 'sans-serif'],
+        'title': ['"Baloo 2"', 'sans-serif']
+      },
       colors: {
         'primary': '#38B6FF',
         'gray': '#707070',

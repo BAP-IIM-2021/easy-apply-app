@@ -5,7 +5,7 @@
     <div class=" w-sm h-sm rounded-full mb-6 bg-gray-50">
         <img src="img/logo.png" alt="logo">
     </div>
-    <h1 class=" text-center text-3xl ">Connectez-vous</h1>
+    <h1 class="font-title text-center text-3xl ">Connectez-vous</h1>
     <form class="flex flex-col xl:w-5xl xl:px-64 items-center" action="POST">
         <div id="content_inscription_1" class="flex justify-center items-center h-base ">
             <div class="flex flex-col" >
@@ -31,7 +31,7 @@
         <div id="login" class="flex-col">
             <input type="submit" value="Connexion" class=" w-sm mb-20 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
         </div>
-            <p>Nouveau sur Easy Apply ? <a href="/register-candidate" class=" text-light-blue font-bold">S'inscrire</a></p>
+            <p>Nouveau sur Easy Apply ? <a href="{{ route ('inscription') }}" class=" text-light-blue font-bold">S'inscrire</a></p>
     </form>
 </section>
 

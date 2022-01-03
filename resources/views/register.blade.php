@@ -9,24 +9,34 @@
 
   <h1 class=" text-center text-3xl ">Inscrivez-vous</h1>
 
-  <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" action="POST">
+  <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" method="POST" action="/register">
+    @csrf {{-- Token check --}}
 
     <div class="flex flex-col items-start mx-16 my-4">
-      <label for="email"class="my-2" >Email</label>
-      <input class="btn-primary" type="text" placeholder="Votre email" name="email">
+      <label for="email" class="my-2" >Email</label>
+      <input class="btn-primary" type="email" placeholder="Votre email" name="email" value="{{ old('email') }}" required>
+      @error('email')
+        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+      @enderror
     </div>
 
     <div class="flex flex-col items-start mx-16 my-4">
-      <label for="password"class="my-2" >Mot de passe</label>
-      <input class="btn-primary" type="text" placeholder="Votre mot de passe" name="password">
+      <label for="password"class="my-2">Mot de passe</label>
+      <input class="btn-primary" type="password" placeholder="Votre mot de passe" name="password" required>
+      @error('password')
+        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+      @enderror
     </div>
 
     <div class="flex flex-col items-start mx-16 my-4">
       <label for="password-verify"class="my-2" >Confirmer le mot de passe</label>
-      <input class="btn-primary" type="text" placeholder="Votre mot de passe" name="password-verify">
+      <input class="btn-primary" type="password" placeholder="Votre mot de passe" name="password-verify" required>
+      @error('password-verify')
+        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+      @enderror
     </div>
 
-    <input type="submit" value="Inscription"class="w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
+    <button type="submit" class="w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">S'inscrire</button>
 
   </form>
 

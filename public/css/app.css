@@ -33,7 +33,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: "Helvetica", sans-serif; /* 4 */
 }
 
 /*
@@ -516,6 +516,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 24rem;
   margin-right: 24rem;
 }
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -591,6 +595,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-medium {
   height: 12rem;
 }
+.h-32 {
+  height: 8rem;
+}
 .w-sm {
   width: 10rem;
 }
@@ -626,6 +633,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .resize-none {
   resize: none;
+}
+.list-decimal {
+  list-style-type: decimal;
 }
 .flex-col {
   flex-direction: column;
@@ -774,6 +784,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .pt-20 {
   padding-top: 5rem;
 }
@@ -782,6 +800,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-justify {
   text-align: justify;
+}
+.font-title {
+  font-family: "Baloo 2", sans-serif;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -883,6 +904,31 @@ html{ /* Size for desktop */
   padding-bottom: 5px;
 }
 
+
+/*
+ *  STYLE 2
+ */
+
+/*body::-webkit-scrollbar-track*/
+/*{*/
+/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+/*  border-radius: 5px;*/
+/*  background-color: #F5F5F5;*/
+/*}*/
+
+/*body::-webkit-scrollbar*/
+/*{*/
+/*  width: 12px;*/
+/*  background-color: #F5F5F5;*/
+/*}*/
+
+/*body::-webkit-scrollbar-thumb*/
+/*{*/
+/*  border-radius: 10px;*/
+/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+/*  background-color: #38B6FF;*/
+/*}*/
+
 @media (max-width: 1540px) { /* Size for tablets */
   html{
     font-size: 10px;
@@ -983,6 +1029,11 @@ html{ /* Size for desktop */
   .xl\:mx-64 {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .xl\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
   }
 
   .xl\:mb-32 {

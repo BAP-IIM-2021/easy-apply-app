@@ -4,11 +4,11 @@
         <div class=" flex flex-col text-center xl:text-left">
             <h3 class="font-bold text-2xl mb-10">Nous contacter</h3>
             <div class="flex items-center my-2">
-                <img src="img/footer/contact_1.png" class="w-xxs">
+                <img src="img/footer/contact_email.svg" class="w-xxs">
                 <p class="text-xl mx-4">project@easyapply.fr</p>
             </div>
             <div class="flex items-center mt-2 mb-10">
-                <img src="img/footer/contact_2.png" class="w-xxs">
+                <img src="img/footer/contact_phone.svg" class="w-xxs">
                 <p class="text-xl mx-4">06.11.06.56.01</p>
             </div>
         </div>

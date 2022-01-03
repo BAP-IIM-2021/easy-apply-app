@@ -5,7 +5,7 @@
         <div class=" w-sm h-sm rounded-full mb-6 bg-gray-50">
             <img src="img/logo.png" alt="logo">
         </div>
-        <h1 class=" text-center text-3xl ">Inscrivez-vous</h1>
+        <h1 class="font-title text-center text-3xl ">Inscrivez-vous</h1>
         <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" action="POST">
             <div id="content_inscription_1" class="flex xl:flex-row flex-col justify-center items-center xl:h-xl">
                 <div class="flex flex-wrap" >

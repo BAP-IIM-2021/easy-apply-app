@@ -6,7 +6,7 @@
             <img src="img/logo.png" alt="logo">
         </div>
         <h1 class=" text-center text-3xl ">Inscrivez-vous</h1>
-        <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" action="POST">
+        <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" method="POST" action="/candidate/register">
             <div id="content_inscription_1" class="flex xl:flex-row flex-col justify-center items-center xl:h-xl">
                 <div class="flex flex-wrap" >
                     <div class="flex flex-col items-start mx-16 my-4">
@@ -118,7 +118,7 @@
             
             <a id="next_inscription" class=" w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">Suivant </a>
             <div id="submit_inscription" class=" hidden flex-col">
-                <input type="submit" value="Inscription"class=" w-sm mt-12 mb-1 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
+                <button type="submit" class=" w-sm mt-12 mb-1 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
                 <a id="back_inscription" class=" w-sm cursor-pointer text-gray-500 text-center mb-4 hover:text-black">Retour </a>
             </div>
                 <p>Déjà un compte Easy Apply ? <a href="/login" class=" text-light-blue font-bold">Connexion</a></p>

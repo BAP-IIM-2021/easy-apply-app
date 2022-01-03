@@ -1,6 +1,6 @@
 <header class="w-full bg-white flex items-center justify-between px-10">
   <div class="w-1/2">
-    <img src="img/logo.png" alt="logo" class=" h-medium">
+    <a href="/"><img src="../img/logo.png" alt="logo" class=" h-medium"></a>
   </div>
     <ul class="flex justify-evenly w-1/3 items-center">
       <li>

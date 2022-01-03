@@ -19,6 +19,7 @@ Route::get('/login', LoginController::class );
 
 // Redirects to register page
 Route::get('/register', [RegisterController::class, 'create']);
+
 // To get data user insert in the page for he's register
 Route::post('/register', [RegisterController::class, 'store']);
 
@@ -27,7 +28,7 @@ Route::post('/register', [RegisterController::class, 'store']);
 ------------------------------------------------------------------------*/
 
 // Redirects to candidate registration
-Route::get('/register-candidate', [CandidateController::class, 'create']);
+Route::get('/candidate/register', [CandidateController::class, 'create']);
 
 // Redirects to the candidate page
 Route::get('/candidate', [CandidateController::class, 'profile']);
@@ -37,12 +38,13 @@ Route::get('/candidate', [CandidateController::class, 'profile']);
 ------------------------------------------------------------------------*/
 
 // Redirects to Employer registration
-Route::get('/register-employer', [EmployerController::class, 'create']);
+Route::get('/employer/register', [EmployerController::class, 'create']);
+
 // To get data employer insert in the page
-Route::post('/register-employer', [EmployerController::class, 'store']);
+Route::post('/employer/register', [EmployerController::class, 'store']);
 
 // Redirects to the Employer page
 Route::get('/employer', [EmployerController::class, 'profile']);
 
 // Redirects to the New Job page
-Route::get('/new-job', [EmployerController::class, 'newJob']);
+Route::get('/employer/new-job', [EmployerController::class, 'newJob']);

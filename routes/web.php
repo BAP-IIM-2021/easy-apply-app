@@ -18,4 +18,12 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/candidate', [LoginController::class, 'candidate'])->name('candidate');
 
 // Redirects to the job-created page
-Route::get('/job-created', [LoginController::class, 'jobCreated'])->name('job-created');
+Route::get('/job-created', function (){
+    return view("job-created");
+});
+
+
+// Redirects to the account page
+Route::get('/account', function (){
+    return view("account");
+});

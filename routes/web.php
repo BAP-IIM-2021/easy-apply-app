@@ -27,6 +27,8 @@ Route::get('/register', RegisterController::class );
 // Redirects to candidate registration
 Route::get('/register-candidate', [CandidateController::class, 'register']);
 
+Route::post('/register-candidate', [CandidateController::class, 'store']);
+
 // Redirects to the candidate page
 Route::get('/candidate', [CandidateController::class, 'profile']);
 

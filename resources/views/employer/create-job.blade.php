@@ -78,6 +78,7 @@
                 </ul>
             </div>
         </div>
+        <input type="submit" value="Valider" class="w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
     </form>
 </section>
 @endsection

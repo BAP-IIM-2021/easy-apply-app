@@ -13,4 +13,8 @@ class EmployerController extends Controller
   public function profile() {
     return view('employer/profile');
   }
+
+  public function newJob(){
+    return view('employer/create-job');
+  }
 }

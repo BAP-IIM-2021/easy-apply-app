@@ -35,3 +35,6 @@ Route::get('/register-employer', [EmployerController::class, 'register']);
 
 // Redirects to the Employer page
 Route::get('/employer', [EmployerController::class, 'profile']);
+
+// Redirects to the New Job page
+Route::get('/new-job', [EmployerController::class, 'newJob']);

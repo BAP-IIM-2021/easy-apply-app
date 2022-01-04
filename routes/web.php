@@ -8,7 +8,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CandidateController;
 
 /*------------------------------------------------------------------------ 
-                  All About common pages
+                        All About common pages
 ------------------------------------------------------------------------*/
 
 // Redirect to the home page
@@ -33,11 +33,11 @@ Route::post('/logout', [SessionController::class, 'close'])->middleware('auth');
 Route::get('/account', [SessionController::class, 'choose'])->middleware('auth');
 
 /*------------------------------------------------------------------------ 
-                  All About Candidate pages
+                        All About Candidate pages
 ------------------------------------------------------------------------*/
 
 // Redirects to candidate registration
-Route::get('/candidate/register', [CandidateController::class, 'create'])->middleware('auth');
+Route::get('/candidate/register', [CandidateController::class, 'create'])->middleware('auth')->name('candidateRegister');
 
 // To get data candidate insert in the page
 Route::post('/candidate/register', [CandidateController::class, 'store'])->middleware('auth');
@@ -46,11 +46,11 @@ Route::post('/candidate/register', [CandidateController::class, 'store'])->middl
 Route::get('/candidate', [CandidateController::class, 'profile'])->middleware('auth');
 
 /*------------------------------------------------------------------------ 
-                  All About Employer pages
+                        All About Employer pages
 ------------------------------------------------------------------------*/
 
 // Redirects to Employer registration
-Route::get('/employer/register', [EmployerController::class, 'create'])->middleware('auth');
+Route::get('/employer/register', [EmployerController::class, 'create'])->middleware('auth')->name('employerRegister');
 
 // To get data employer insert in the page
 Route::post('/employer/register', [EmployerController::class, 'store'])->middleware('auth');

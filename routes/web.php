@@ -18,7 +18,7 @@ Route::get('/', HomeController::class );
 Route::get('/login', [SessionController::class, 'create'])->middleware('guest');
 
 // To get user data and check it to login it
-Route::post('/login', [SessionController::class, 'store'])->middleware('guest');
+Route::post('/login', [SessionController::class, 'store'])->middleware('guest')->name('login');
 
 // Redirects to register page
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
@@ -37,29 +37,29 @@ Route::get('/account', [SessionController::class, 'choose'])->middleware('auth')
 ------------------------------------------------------------------------*/
 
 // Redirects to candidate registration
-Route::get('/candidate/register', [CandidateController::class, 'create']);
+Route::get('/candidate/register', [CandidateController::class, 'create'])->middleware('auth');
 
 // To get data candidate insert in the page
-Route::post('/candidate/register', [CandidateController::class, 'store']);
+Route::post('/candidate/register', [CandidateController::class, 'store'])->middleware('auth');
 
 // Redirects to the candidate page
-Route::get('/candidate', [CandidateController::class, 'profile']);
+Route::get('/candidate', [CandidateController::class, 'profile'])->middleware('auth');
 
 /*------------------------------------------------------------------------ 
                   All About Employer pages
 ------------------------------------------------------------------------*/
 
 // Redirects to Employer registration
-Route::get('/employer/register', [EmployerController::class, 'create']);
+Route::get('/employer/register', [EmployerController::class, 'create'])->middleware('auth');
 
 // To get data employer insert in the page
-Route::post('/employer/register', [EmployerController::class, 'store']);
+Route::post('/employer/register', [EmployerController::class, 'store'])->middleware('auth');
 
 // Redirects to the Employer page
-Route::get('/employer', [EmployerController::class, 'profile']);
+Route::get('/employer', [EmployerController::class, 'profile'])->middleware('auth');
 
 // Redirects to the New Job page
-Route::get('/employer/new-job', [EmployerController::class, 'newJob']);
+Route::get('/employer/new-job', [EmployerController::class, 'newJob'])->middleware('auth');
 
 // Redirects to the job-created page
-Route::get('/employer/job', [EmployerController::class, 'job']);
+Route::get('/employer/job', [EmployerController::class, 'job'])->middleware('auth');

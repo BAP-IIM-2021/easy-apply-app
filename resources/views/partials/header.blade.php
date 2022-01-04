@@ -35,3 +35,8 @@
   @endauth
 
 </header>
+
+<header class="flex xl:hidden w-full py-20">
+
+
+</header>

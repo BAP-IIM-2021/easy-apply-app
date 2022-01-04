@@ -9,25 +9,25 @@ class Candidate extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'last_name', 
-        'firstname',
-        'birth_date',
-        'address',
-        'linkedin',
-        'website',
-        'phone_number',
-        'photo',
-        'cv',
-        'profile_completed', 
-        'is_profile_completed',
-        'location_id',
-        'status_id',
-        'degree_id',
-        'training_id',
-        'year_exp_id',
-        'user_id'
-    ];
+    protected $guarded = [];
+    //     'last_name', 
+    //     'firstname',
+    //     'birth_date',
+    //     'address',
+    //     'linkedin',
+    //     'website',
+    //     'phone_number',
+    //     'photo',
+    //     'cv',
+    //     'profile_completed', 
+    //     'is_profile_completed',
+    //     'location_id',
+    //     'status_id',
+    //     'degree_id',
+    //     'training_id',
+    //     'year_exp_id',
+    //     'user_id'
+    // ];
 
     public function location(){
         return $this->belongsTo(Location::class);

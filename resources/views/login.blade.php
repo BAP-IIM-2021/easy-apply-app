@@ -6,12 +6,13 @@
         <img src="img/logo.png" alt="logo">
     </div>
     <h1 class="font-title text-center text-3xl ">Connectez-vous</h1>
-    <form class="flex flex-col xl:w-5xl xl:px-64 items-center" action="POST">
+    <form class="flex flex-col xl:w-5xl xl:px-64 items-center" method="POST" action="/login">
+        @csrf
         <div id="content_inscription_1" class="flex justify-center items-center h-base ">
             <div class="flex flex-col" >
                 <div class="flex flex-col items-start mx-16 my-4">
                     <label for="mail" class="my-2">E-mail</label>
-                    <input class="btn-primary" type="email" placeholder="Adresse mail" name="mail">
+                    <input class="btn-primary" type="email" placeholder="Adresse mail" name="email">
                 </div>
                 <div class="flex flex-col mx-16 mt-4">
                     <label for="password" class="my-2" >Mot de passe</label>
@@ -29,9 +30,9 @@
             </div>
         </div>
         <div id="login" class="flex-col">
-            <input type="submit" value="Connexion" class=" w-sm mb-20 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">
+            <button type="submit" class=" w-sm mb-20 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">Connexion</button>
         </div>
-            <p>Nouveau sur Easy Apply ? <a href="{{ route ('inscription') }}" class=" text-light-blue font-bold">S'inscrire</a></p>
+            <p>Nouveau sur Easy Apply ? <a href="/candidate/register" class=" text-light-blue font-bold">S'inscrire</a></p>
     </form>
 </section>
 

@@ -41,7 +41,7 @@ Route::get('/candidate/register', [CandidateController::class, 'create']);
 Route::post('/candidate/register', [CandidateController::class, 'store']);
 
 // Redirects to the candidate page
-Route::get('/candidate', [LoginController::class, 'candidate'])->name('candidate');
+Route::get('/candidate', [CandidateController::class, 'profile']);
 
 /*------------------------------------------------------------------------ 
                   All About Employer pages

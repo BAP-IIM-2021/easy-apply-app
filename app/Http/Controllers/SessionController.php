@@ -24,6 +24,12 @@ class SessionController extends Controller
     return back()->withErrors(['email' => 'Not be verified']);
   }
 
+  public function close() {
+    auth()->logout();
+
+    return redirect('/')->with('success', 'Goodbye!');
+  }
+
   public function choose() {
     return view('account');
   }

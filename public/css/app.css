@@ -464,6 +464,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity));
   --tw-ring-opacity: 0.75;
 }
+.btn-second {
+  width: 20rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.btn-second:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 .btn-blue {
   border-radius: 9999px;
   border-width: 2px;
@@ -1085,28 +1102,90 @@ html{ /* Size for desktop */
 
 
 /*
- *  STYLE 2
+ *  Scrollback
  */
 
-/*body::-webkit-scrollbar-track*/
-/*{*/
-/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
-/*  border-radius: 5px;*/
-/*  background-color: #F5F5F5;*/
+body::-webkit-scrollbar-track
+{
+ background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+ border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #38B6FF;
+}
+
+.input-div{
+    position: relative;
+} /* necessary to give position: relative to parent. */
+
+/*input[type="text"] {*/
+/*    box-sizing: content-box;*/
 /*}*/
 
-/*body::-webkit-scrollbar*/
-/*{*/
-/*  width: 12px;*/
-/*  background-color: #F5F5F5;*/
-/*}*/
+.outline-input ~ .focus-border:before,
+.outline-input ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #38b6ff;
+    transition: 0.3s;
+}
+.outline-input ~ .focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
 
-/*body::-webkit-scrollbar-thumb*/
-/*{*/
-/*  border-radius: 10px;*/
-/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
-/*  background-color: #38B6FF;*/
-/*}*/
+}
+.outline-input ~ .focus-border i:before,
+.outline-input ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #38b6ff;
+    transition: 0.4s;
+
+
+}
+.outline-input ~ .focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    border-radius: 100px;
+
+}
+
+.outline-input:focus ~ .focus-border:before,
+.outline-input:focus ~ .focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 100px;
+
+}
+
+.outline-input:focus ~ .focus-border i:before,
+.outline-input:focus ~ .focus-border i:after {
+    height: 100%;
+    transition: 0.4s;
+    border-radius: 100px;
+
+}
 
 @media (max-width: 1540px) { /* Size for tablets */
     html{

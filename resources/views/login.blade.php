@@ -10,9 +10,12 @@
         @csrf
         <div id="content_inscription_1" class="flex justify-center items-center h-base ">
             <div class="flex flex-col" >
-                <div class="flex flex-col items-start mx-16 my-4">
+                <div class="input-div flex flex-col items-start mx-16 my-4">
                     <label for="mail" class="my-2">E-mail</label>
-                    <input class="btn-primary" type="email" placeholder="Adresse mail" name="email">
+                    <input class="btn-second outline-input" type="email" placeholder="Adresse mail" name="email">
+                    <span class="focus-border">
+                            <i></i>
+                        </span>
                 </div>
                 <div class="flex flex-col mx-16 mt-4">
                     <label for="password" class="my-2" >Mot de passe</label>

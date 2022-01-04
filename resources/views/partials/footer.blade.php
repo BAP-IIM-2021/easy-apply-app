@@ -15,9 +15,9 @@
         <div class=" flex flex-col justify-center text-center xl:text-left">
             <h3 class="font-bold text-2xl mb-10 ">Vous avez un compte Easy Apply</h3>
             <a href="/login" class="text-xl mb-6 font-display max-w-sm leading-tight">
-                <span class="link link-underline">Se connecter</span></a>
+                <span class="link-underline">Se connecter</span></a>
             <a href="/register" class="text-xl mb-6 font-display max-w-sm leading-tight">
-                <span class="link link-underline">S'inscrire</span></a>
+                <span class="link-underline">S'inscrire</span></a>
         </div>
     </div>
     <div class="flex justify-center">
@@ -35,19 +35,4 @@
     <div class=" border-solid border-t-2 border-zinc-700 h-xs mx-96 mt-20">
 
     </div>
-  </div>
-  <div class="flex justify-center">
-    <a class="mx-8 hover:text-primary" href="">
-      <i class="fab fa-instagram fa-3x"></i>
-    </a>
-    <a class="mx-8 hover:text-primary" href="">
-    <i class="fab fa-linkedin fa-3x"></i>
-    </a>
-    <a class="mx-8 hover:text-primary" href="">
-      <i class="fab fa-facebook-square fa-3x"></i>
-    </a>
-  </div>
-
-  <div class=" border-solid border-t-2 border-zinc-700 h-xs mx-96 mt-20">
-  </div>
 </footer>

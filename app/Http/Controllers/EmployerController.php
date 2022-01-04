@@ -39,4 +39,5 @@ class EmployerController extends Controller
   public function job(){
     return view('employer/job');
   }
+
 }

@@ -23,6 +23,12 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi sequi eius fugiat numquam error enim pariatur, labore, nesciunt perferendis, possimus praesentium minima totam expedita adipisci ratione nulla ad cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi officia incidunt? Commodi sint quae minima adipisci quas. Veniam nulla accusantium culpa tempore beatae officia earum rem hic aspernatur sed?</p>
     </div>
   </article>
+  <article class="bg-primary text-white text-center m-24 xl:mx-20 p-10 flex flex-col justify-center place-items-center gap-8">
+    <h3 class="font-title xl:text-4xl text-2xl">Pour créer un nouveau travail, cliquez ici</h3>
+    <a href="/employer/new-job" class="rounded-full border-2 border-white bg-white text-xl xl:text-2xl text-primary py-2 px-4 hover:text-white hover:bg-primary hover:border-2 hover:border-white transition duration-150 ease-out hover:ease-in">Créer un job</a>
+  </article>
+
+
 
 </section>
 

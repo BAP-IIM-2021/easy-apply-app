@@ -36,18 +36,4 @@
 
     </div>
   </div>
-  <div class="flex justify-center">
-    <a class="mx-8 hover:text-primary" href="">
-      <i class="fab fa-instagram fa-3x"></i>
-    </a>
-    <a class="mx-8 hover:text-primary" href="">
-    <i class="fab fa-linkedin fa-3x"></i>
-    </a>
-    <a class="mx-8 hover:text-primary" href="">
-      <i class="fab fa-facebook-square fa-3x"></i>
-    </a>
-  </div>
-
-  <div class=" border-solid border-t-2 border-zinc-700 h-xs mx-96 mt-20">
-  </div>
 </footer>

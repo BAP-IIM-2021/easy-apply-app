@@ -21,7 +21,7 @@ class CandidateController extends Controller
       'phone_number' => 'numeric',
     ]);
 
-    $attributes['user_id'] = 1;
+    $attributes['user_id'] = 2;
 
     Candidate::create($attributes);
 

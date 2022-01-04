@@ -12,11 +12,17 @@
             <div class="flex flex-col" >
                 <div class="flex flex-col items-start mx-16 my-4">
                     <label for="mail" class="my-2">E-mail</label>
-                    <input class="btn-primary" type="email" placeholder="Adresse mail" name="email">
+                    <input class="btn-primary" type="email" placeholder="Adresse mail" name="email" value="{{ old('email')}}">
+                    @error('email')
+                        <p class="text-red-500 mt-1 w-tiny">{{ $message }}</p>
+                    @enderror
                 </div>
                 <div class="flex flex-col mx-16 mt-4">
                     <label for="password" class="my-2" >Mot de passe</label>
                     <input class="btn-primary" type="password" placeholder="Mot de passe" name="password">
+                    @error('')
+                        <p class="text-red-500 mt-1 w-tiny">{{ $message }}</p>
+                    @enderror
                 </div>
                 <div class="flex mx-16 mb-4 justify-end ">
                     <a href='#'>
@@ -32,7 +38,7 @@
         <div id="login" class="flex-col">
             <button type="submit" class=" w-sm mb-20 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">Connexion</button>
         </div>
-            <p>Nouveau sur Easy Apply ? <a href="/candidate/register" class=" text-light-blue font-bold">S'inscrire</a></p>
+            <p>Nouveau sur Easy Apply ? <a href="/register" class=" text-light-blue font-bold">S'inscrire</a></p>
     </form>
 </section>
 

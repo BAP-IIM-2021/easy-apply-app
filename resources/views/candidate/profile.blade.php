@@ -5,7 +5,7 @@
 <section class=" bg-light-blue p-12 text-xl">
     <div class="flex justify-center">
         <img src="img/search.png" alt="search" class="h-xxs">
-        <input type="search" placeholder="Rechercher..." class=" w-sm placeholder:text-light-black bg-transparent">
+        <input type="search" placeholder="Rechercher..." class=" w-sm placeholder:text-light-black bg-transparent placeholder:text-black-mat ">
     </div>
     <div class="flex flex-wrap justify-center my-10">
         <div class="flex flex-col mx-32  my-14"> 

@@ -19,9 +19,8 @@ class CandidateController extends Controller
       'birth_date' => 'date',
       'address' => 'min:3',
       'phone_number' => 'numeric',
+      'user_id' => ['required']
     ]);
-
-    $attributes['user_id'] = 2;
 
     Candidate::create($attributes);
 

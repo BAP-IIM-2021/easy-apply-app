@@ -11,6 +11,8 @@
   <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" method="POST" action="/employer/register">
     @csrf {{-- Token check --}}
 
+    <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+
     <main class="flex flex-col xl:flex-row">
       <section>
         <div class="flex flex-col items-start mx-16 my-4">

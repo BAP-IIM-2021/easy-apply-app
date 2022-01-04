@@ -19,10 +19,9 @@ class EmployerController extends Controller
       'logo' => ['required'],
       'description' => ['required'],
       'company_size_id' => ['required'],
-      'business_sector_id' => ['required']
+      'business_sector_id' => ['required'],
+      'user_id' => ['required']
     ]);
-
-    $attributes['user_id'] = 1;
 
     Employer::create($attributes);
     

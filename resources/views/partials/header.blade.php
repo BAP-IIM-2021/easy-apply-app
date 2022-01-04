@@ -6,9 +6,13 @@
       <li>
         <a href="/" class="text-xl hover:text-light-blue transition duration-300 ease-out hover:ease-in">Accueil</a>
       </li>
-      <li>
-        <a href="/login" class=" w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">Se connecter</a>
-      </li>
+      @auth
+        <form method="POST" action="/logout" class="w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">@csrf<button type="submit" >Se déconnecter</button></form>
+      @else
+        <li>
+          <a href="/login" class="w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">Se connecter</a>
+        </li>
+      @endauth
     </ul>
   </div>
 </header>

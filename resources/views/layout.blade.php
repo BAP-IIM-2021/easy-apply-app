@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <title>Easy Apply</title>
 </head>
-<body class="bg-white-cream w-full h-auto">
-    @yield('content')
-    
-    @include('partials/footer')
-    <script src="../js/app.js"></script>
+<body class="bg-white-cream">
+@yield('content')
+
+@include('partials/footer')
+<script src="./js/app.js"></script>
 </body>
 </html>

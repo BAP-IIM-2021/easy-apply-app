@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43
+class ComposerStaticInit8ae701b374fd4bfd0ac7230e8cc2bc31
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -1370,6 +1370,7 @@ class ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43
         'Faker\\Provider\\nl_BE\\Payment' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Payment.php',
         'Faker\\Provider\\nl_BE\\Person' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Person.php',
         'Faker\\Provider\\nl_BE\\PhoneNumber' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/PhoneNumber.php',
+        'Faker\\Provider\\nl_BE\\Text' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php',
         'Faker\\Provider\\nl_NL\\Address' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Address.php',
         'Faker\\Provider\\nl_NL\\Color' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Color.php',
         'Faker\\Provider\\nl_NL\\Company' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Company.php',
@@ -5564,10 +5565,10 @@ class ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit62f21676e4aee3be4240cd3b6ce37d43::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8ae701b374fd4bfd0ac7230e8cc2bc31::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8ae701b374fd4bfd0ac7230e8cc2bc31::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit8ae701b374fd4bfd0ac7230e8cc2bc31::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit8ae701b374fd4bfd0ac7230e8cc2bc31::$classMap;
 
         }, null, ClassLoader::class);
     }

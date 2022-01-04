@@ -18,6 +18,6 @@ class SessionController extends Controller
             return redirect('/');
         }
 
-        return back()->withErrors(['email' => 'Not be verified']);
+        return back()->withErrors(['email' => 'L\'adresse email ou le mot de passe n\'est pas valide']);
     }
 }

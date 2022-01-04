@@ -16,7 +16,7 @@
       <label for="email" class="my-2" >Email</label>
       <input class="btn-primary" type="email" placeholder="Votre email" name="email" value="{{ old('email') }}" required>
       @error('email')
-        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+        <p class="text-red-500 mt-1 w-tiny">{{ $message }}</p>
       @enderror
     </div>
 
@@ -24,7 +24,7 @@
       <label for="password"class="my-2">Mot de passe</label>
       <input class="btn-primary" type="password" placeholder="Votre mot de passe" name="password" required>
       @error('password')
-        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+        <p class="text-red-500 mt-1 w-tiny">{{ $message }}</p>
       @enderror
     </div>
 
@@ -32,11 +32,12 @@
       <label for="password-verify"class="my-2" >Confirmer le mot de passe</label>
       <input class="btn-primary" type="password" placeholder="Votre mot de passe" name="password-verify" required>
       @error('password-verify')
-        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+        <p class="text-red-500 mt-1 w-tiny">{{ $message }}</p>
       @enderror
     </div>
 
     <button type="submit" class="w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">S'inscrire</button>
+    <p>Déjà un compte Easy Apply ? <a href="/login" class=" text-light-blue font-bold">Connexion</a></p>
 
   </form>
 

@@ -590,6 +590,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mt-1 {
+  margin-top: 0.25rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -598,9 +601,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-20 {
   margin-bottom: 5rem;
-}
-.mt-1 {
-  margin-top: 0.25rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -665,14 +665,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full {
   width: 100%;
 }
+.w-tiny {
+  width: 20rem;
+}
 .w-lg {
   width: 30rem;
 }
 .w-2xl {
   width: 50rem;
-}
-.w-tiny {
-  width: 20rem;
 }
 .w-fit {
   width: -webkit-fit-content;
@@ -918,13 +918,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(56 182 255 / var(--tw-text-opacity));
 }
-.text-light-blue {
-  --tw-text-opacity: 1;
-  color: rgb(56 182 255 / var(--tw-text-opacity));
-}
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-light-blue {
+  --tw-text-opacity: 1;
+  color: rgb(56 182 255 / var(--tw-text-opacity));
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -951,6 +951,42 @@ html{ /* Size for desktop */
   html{
       font-size: 14px;
   }
+}
+.placeholder\:text-white::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.placeholder\:text-white:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.placeholder\:text-white::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.placeholder\:text-black::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.placeholder\:text-black:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.placeholder\:text-black::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.placeholder\:text-black-mat::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity));
+}
+.placeholder\:text-black-mat:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity));
+}
+.placeholder\:text-black-mat::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity));
 }
 .hover\:border-2:hover {
   border-width: 2px;

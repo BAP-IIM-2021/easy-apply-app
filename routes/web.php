@@ -6,6 +6,7 @@ use App\Http\Controllers\SessionController;
 use App\Http\Controllers\EmployerController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\SearchController;
 
 /*------------------------------------------------------------------------ 
                   All About common pages
@@ -63,3 +64,9 @@ Route::get('/employer/new-job', [EmployerController::class, 'newJob'])->middlewa
 
 // Redirects to the job-created page
 Route::get('/employer/job', [EmployerController::class, 'job'])->middleware('auth');
+
+/*------------------------------------------------------------------------ 
+                  All About Search
+------------------------------------------------------------------------*/
+
+Route::get('/search', SearchController::class);

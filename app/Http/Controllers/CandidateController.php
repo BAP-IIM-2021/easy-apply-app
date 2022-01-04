@@ -15,6 +15,10 @@ class CandidateController extends Controller
     return view('candidate/profile');
   }
 
+  public function create(){
+    return view('candidate/register');
+  }
+
   public function store(){
 
     // Create the user

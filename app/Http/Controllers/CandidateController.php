@@ -27,7 +27,17 @@ class CandidateController extends Controller
     return redirect('/candidate');
   }
 
-  public function profile() {
-    return view('candidate/profile');
+  public function profile($id) {
+    $candidate = Candidate::findOrFail($id);
+    $softskills = $candidate->softkills;
+    return view('candidate/profile', [ 
+      'candidate' => $candidate,
+      'softskills' => $softskills
+    ]);
+  }
+
+  public function destroy($id)
+  {
+    
   }
 }

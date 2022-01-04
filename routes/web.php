@@ -43,7 +43,9 @@ Route::get('/candidate/register', [CandidateController::class, 'create'])->middl
 Route::post('/candidate/register', [CandidateController::class, 'store'])->middleware('auth');
 
 // Redirects to the candidate page
-Route::get('/candidate', [CandidateController::class, 'profile'])->middleware('auth');
+Route::get('/candidate/{id}', [CandidateController::class, 'profile'])->middleware('auth');
+
+Route::delete('/candidate/delete/{id}', [ CandidateController::class, 'destroy'])->middleware('auth');
 
 /*------------------------------------------------------------------------ 
                         All About Employer pages

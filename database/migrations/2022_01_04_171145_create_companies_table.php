@@ -21,9 +21,9 @@ class CreateCompaniesTable extends Migration
             $table->boolean('is_completed')->default(0);
             $table->timestamps();
 
-            $table->foreignId('id_location')->nullable()->constrained('location')->onDelete('cascade');
-            $table->foreignId('id_company_size')->nullable()->constrained('company_size')->onDelete('cascade');
-            $table->foreignId('id_sector')->nullable()->constrained('sectors')->onDelete('cascade');
+            $table->foreignId('id_location')->nullable()->constrained('locations');
+            $table->foreignId('id_company_size')->nullable()->constrained('company_sizes');
+            $table->foreignId('id_sector')->nullable()->constrained('sectors');
             $table->foreignId('id_user')->constrained('users')->onDelete('cascade');
         });
     }

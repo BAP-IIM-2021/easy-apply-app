@@ -36,7 +36,7 @@
       @enderror
     </div>
 
-    <button type="submit" class="w-sm my-12 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">S'inscrire</button>
+    <button type="submit" class=" my-12 btn-blue">S'inscrire</button>
 
   </form>
 

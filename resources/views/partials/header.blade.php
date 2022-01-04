@@ -7,7 +7,8 @@
         <a href="" class="text-xl hover:text-light-blue transition duration-300 ease-out hover:ease-in">Accueil</a>
       </li>
       <li>
-        <a href="/login" class=" w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">Se connecter</a>
+        <a href="/login" class="text-center rounded-full border-2 border-light-blue bg-primary text-xl text-white py-2 px-4 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in;
+">Se connecter</a>
       </li>
     </ul>
   </div>

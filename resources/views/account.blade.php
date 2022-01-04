@@ -26,7 +26,7 @@
                 pouvez également créer votre page entreprise
                 ici.
             </p>
-            <a href="/employer-register" class="text-align rounded-full border-2 border-light-blue bg-primary text-xl xl:text-2xl text-white py-2 px-10 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in">
+            <a href="/employer/register" class="text-align rounded-full border-2 border-light-blue bg-primary text-xl xl:text-2xl text-white py-2 px-10 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in">
                 S’inscrire
             </a>
         </div>

@@ -36,7 +36,8 @@
             </div>
         </div>
         <div id="login" class="flex-col">
-            <button type="submit" class=" w-sm mb-20 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-center">Connexion</button>
+            <button type="submit" class=" w-sm mb-20 py-2 border-light-blue border-2 bg-light-blue rounded-full text-white hover:text-light-blue shadow-md hover:bg-white cursor-pointer text-center transition duration-150 ease-out hover:ease-in ">Connexion</button>
+            
         </div>
             <p>Nouveau sur Easy Apply ? <a href="/register" class=" text-light-blue font-bold">S'inscrire</a></p>
     </form>

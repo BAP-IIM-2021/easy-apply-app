@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <section class=" mt-28 text-xl flex items-center flex-col ">
+    <section class=" mt-28 text-xl flex items-center flex-col">
         <div class=" w-sm h-sm rounded-full mb-6 bg-gray-50">
             <img src="../img/logo.png" alt="logo">
         </div>
@@ -10,7 +10,7 @@
           @csrf
           <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
             <div id="content_inscription_1" class="flex xl:flex-row flex-col justify-center items-center xl:h-xl">
-                <div class="flex flex-wrap" >
+                <div class="flex flex-wrap justify-center xl:justify-start" >
                     <div class="flex flex-col items-start mx-16 my-4">
                         <label for="last_name"class="my-2" >Nom</label>
                         <input class="btn-primary" type="text" placeholder="Nom" name="last_name" value="{{ old('last_name')}}">
@@ -60,7 +60,7 @@
 
 
             <div id="content_inscription_2" class="xl:flex-row flex-col justify-center items-center hidden bg">
-                <div class="flex flex-wrap" >
+                <div class="flex flex-wrap justify-center xl:justify-start" >
                     <div class="flex flex-col items-start mx-16 my-4">
                         <label for="website"class="my-2" >Site Internet</label>
                         <input class="btn-primary" type="url" placeholder="Site web" name="website">

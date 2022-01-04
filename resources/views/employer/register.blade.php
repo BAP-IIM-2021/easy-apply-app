@@ -1,4 +1,5 @@
 @extends('layout')
+@include('partials/header')
 @section('content')
 
 <section class="w-full mt-28 text-xl flex items-center flex-col">

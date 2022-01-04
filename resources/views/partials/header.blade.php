@@ -17,7 +17,7 @@
         <img src="../img/search.png" alt="">
         <a href="/search" class=" mx-2 text-xl ">Recherche</a>
       </li>
-      <form method="POST" action="/logout" class="w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">@csrf<button type="submit" >Se déconnecter</button></form>
+      <form method="POST" action="/logout" class=" m-0 w-sm px-6 py-2 border-light-blue border-2 bg-light-blue rounded-full text-white shadow-md hover:bg-white hover:text-light-blue transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">@csrf<button type="submit" >Déconnexion</button></form>
       
       
     </ul>
@@ -30,13 +30,8 @@
         <a href="/search" class="rounded-full border-2 border-light-blue text-xl hover:text-white hover:bg-light-blue transition duration-300 ease-out hover:ease-in px-4 py-2">Recherche</a>
       </li>
       <li>
-        <a href="/login" class="w-sm px-6 py-4 bg-light-blue text-white rounded-2xl shadow-md hover:bg-blue-500 transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">Se connecter</a>
+        <a href="/login" class="m-0 w-sm px-6 py-2 border-light-blue border-2 bg-light-blue rounded-full text-white shadow-md hover:bg-white hover:text-light-blue transition duration-150 ease-out hover:ease-in focus:outline-none focus:ring-2 cursor-pointer text-center">Connexion</a>
       </li>
   @endauth
-
-</header>
-
-<header class="flex xl:hidden w-full py-20">
-
 
 </header>

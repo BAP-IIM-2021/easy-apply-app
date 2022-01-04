@@ -18,7 +18,7 @@ Route::get('/', HomeController::class );
 Route::get('/login', [SessionController::class, 'create'])->middleware('guest');
 
 // To get user data and check it to login it
-Route::post('/login', [SessionController::class, 'store'])->middleware('guest');
+Route::post('/login', [SessionController::class, 'store'])->middleware('guest')->name('login');
 
 // Redirects to register page
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');

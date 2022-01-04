@@ -18,7 +18,7 @@ class SessionController extends Controller
 
     if (auth()->attempt($attributes)){
       session()->regenerate();
-      return redirect('/');
+      return redirect('/account');
     }
 
     return back()->withErrors(['email' => 'Not be verified']);

@@ -32,6 +32,9 @@ class CandidateController extends Controller
     ]);
 
     $attributes['user_id'] = 1;
+
     Candidate::create($attributes);
+
+    return redirect('/candidate');
   }
 }

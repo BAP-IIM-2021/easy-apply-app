@@ -20,10 +20,6 @@ Route::get('/login', LoginController::class );
 // Redirects to register page
 Route::get('/register', RegisterController::class );
 
-// Redirects to the account page
-Route::get('/account', function (){
-    return view("account");
-});
 /*------------------------------------------------------------------------ 
                   All About Candidate pages
 ------------------------------------------------------------------------*/
@@ -34,10 +30,9 @@ Route::get('/register-candidate', [CandidateController::class, 'register']);
 // Redirects to the candidate page
 Route::get('/candidate', [CandidateController::class, 'profile']);
 
-// Redirects to the job-created page
-Route::get('/job-created', function (){
-    return view("job-created");
-});
+/*------------------------------------------------------------------------
+                  All About Employer pages
+------------------------------------------------------------------------*/
 
 // Redirects to Employer registration
 Route::get('/register-employer', [EmployerController::class, 'register']);

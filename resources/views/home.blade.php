@@ -14,11 +14,11 @@
   <article class="my-36 ">
     <h2 class="font-title text-center text-6xl xl:mb-32  hover:text-light-blue transition duration-300 ease-out hover:ease-in">Qui sommes-nous ?</h2>
 
-    <div class="flex flex-col justify-center place-items-center my-12 xl:justify-evenly xl:flex-row">
+    <div class=" flex flex-col justify-center place-items-center my-12 xl:justify-evenly xl:flex-row">
       <div class="flex justify-center my-14 ">
         <iframe class="p-2 w-xl xl:w-2xl h-full xl:h-xl xl:p-0" src="https://www.youtube.com/watch?v=o01l3sotf1Q&list=PLXaH20eIS38afy5jGOV9yRws_UOant1__&index=4"></iframe>
       </div>
-      <div class="shadow-md bg-white rounded-lg px-10 py-24 relative m-14">
+      <div class="highlight shadow-md bg-white rounded-lg px-10 py-24 relative m-14">
         <div class="flex justify-center place-items-center rounded-full bg-white shadow-md absolute xl:translate-x-1/3 left-48 xl:left-1/3 -top-24 w-sm h-sm ">
           <img width="170" height="170" class="m-auto" src="./img/logo.png" alt="logo">
         </div>

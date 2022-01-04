@@ -18,7 +18,8 @@
 
 
     <section class="flex flex-col justify-evenly m-14 place-items-center xl:flex xl:flex-row xl:justify-evenly">
-        <div class="shadow-md bg-white rounded-lg p-10 m-5 relative w-lg flex flex-col justify-between place-items-center">
+        <div class="highlight shadow-md bg-white rounded-lg p-10 m-5 relative w-lg h-auto flex flex-col justify-between place-items-center">
+
             <h3 class="font-title text-light-blue uppercase text-center text-2xl font-bold ">Vous être employeur ?</h3>
             <p class="text-center text-xl my-14">
                 Créez votre page entreprise en cliquant ici.
@@ -26,12 +27,12 @@
                 pouvez également créer votre page entreprise
                 ici.
             </p>
-            <a href="" class="text-align rounded-full border-2 border-light-blue bg-primary text-xl xl:text-2xl text-white py-2 px-10 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in">
+            <a href="" class="z-10 text-align rounded-full border-2 border-light-blue bg-primary text-xl xl:text-2xl text-white py-2 px-10 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in">
                 S’inscrire
             </a>
         </div>
 
-        <div class="shadow-md bg-white rounded-lg p-10 m-5 relative w-lg flex flex-col justify-between place-items-center">
+        <div class="highlight shadow-md bg-white rounded-lg p-10 m-5 relative w-lg h-auto flex flex-col justify-between place-items-center">
             <h3 class="font-title text-light-blue uppercase text-center text-2xl font-bold ">Vous être à la recherche d’un emploi ?</h3>
             <p class="text-center text-xl my-14">
                 Créez votre page candidat en cliquant ici.
@@ -39,7 +40,7 @@
                 pouvez également créer votre page candidat
                 ici.
             </p>
-            <a href="" class="text-align rounded-full border-2 border-light-blue bg-primary text-xl xl:text-2xl text-white py-2 px-10 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in">
+            <a href="" class="z-10 text-align rounded-full border-2 border-light-blue bg-primary text-xl xl:text-2xl text-white py-2 px-10 hover:text-light-blue hover:bg-white hover:border-2 hover:border-light-blue transition duration-150 ease-out hover:ease-in">
                 S’inscrire
             </a>
         </div>

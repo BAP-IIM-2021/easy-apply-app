@@ -65,3 +65,8 @@ Route::post('/login', [SessionController::class, 'store']);
 Route::get('/job-created', function (){
     return view("job-created");
 });
+
+// Redirects to the profile page
+Route::get('/profile-candidate', function (){
+    return view("profile-candidate");
+});

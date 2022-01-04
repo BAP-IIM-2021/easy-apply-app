@@ -612,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 24rem;
   margin-right: 24rem;
 }
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -660,6 +664,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-20 {
   margin-top: 5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -695,6 +702,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-medium {
   height: 12rem;
+}
+.h-tiny {
+  height: 20rem;
 }
 .w-sm {
   width: 10rem;
@@ -739,6 +749,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .list-decimal {
   list-style-type: decimal;
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -787,6 +800,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded-\[5px\] {
   border-radius: 5px;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 .border-2 {
   border-width: 2px;
@@ -838,6 +854,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black-mat {
   --tw-bg-opacity: 1;
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+}
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 112 112 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -975,6 +995,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(112 112 112 / var(--tw-text-opacity));
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -1373,6 +1397,10 @@ body::-webkit-scrollbar-thumb
 
   .xl\:justify-center {
     justify-content: center;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 
   .xl\:justify-around {

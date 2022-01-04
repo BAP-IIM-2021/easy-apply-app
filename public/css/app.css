@@ -768,8 +768,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-xl {
   border-radius: 0.75rem;
 }
-.rounded-\[20px\] {
-  border-radius: 20px;
+.rounded-\[5px\] {
+  border-radius: 5px;
 }
 .border-2 {
   border-width: 2px;
@@ -1081,6 +1081,7 @@ html{ /* Size for desktop */
 .highlight:hover:after {
     transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
 }
+
 
 
 /*

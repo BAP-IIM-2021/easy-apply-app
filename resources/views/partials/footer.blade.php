@@ -8,7 +8,7 @@
                 <a href="mailto: project@easyapply.fr" class="link link-underline text-xl mx-4">project@easyapply.fr</a>
             </div>
             <div class="flex items-center mt-2 mb-10">
-                <img src="img/footer/contact_phone.svg" class="w-xxs">
+                <img src="../img/footer/contact_phone.svg" class="w-xxs">
                 <p class="text-xl mx-4">06.11.06.56.01</p>
             </div>
         </div>

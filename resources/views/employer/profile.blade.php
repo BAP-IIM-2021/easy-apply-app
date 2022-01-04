@@ -16,9 +16,9 @@
 
 <section class="py-16 flex flex-col gap-16">
 
-  <article class="w-3/4 m-auto bg-white shadow-md p-8 rounded-[20px]">
+  <article class="highlight w-3/4 m-auto bg-white shadow-md p-8 rounded-[5px]">
     <h3 class="font-bold text-lg xl:text-xl pb-4">Nom de la proposition d'emploi</h3>
-    <div class="leading-relaxed">
+    <div class=" leading-relaxed">
       <p>Description de la proposition. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae autem, est laborum possimus et necessitatibus a, aperiam, provident corrupti eos dolor deleniti ab quasi perferendis molestias sunt perspiciatis excepturi atque.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi sequi eius fugiat numquam error enim pariatur, labore, nesciunt perferendis, possimus praesentium minima totam expedita adipisci ratione nulla ad cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi officia incidunt? Commodi sint quae minima adipisci quas. Veniam nulla accusantium culpa tempore beatae officia earum rem hic aspernatur sed?</p>
     </div>

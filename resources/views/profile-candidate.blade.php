@@ -4,28 +4,28 @@
 @section('content')
 
 
-    <section class="bg-gray flex justify-center h-100 relative">
-        <img src="../img/add-pic.svg" alt="add pic" class="my-60">
-        <div class="flex rounded-full bg-white shadow-md absolute justify-center xl:left-[10%] bottom-[-30%] xl:bottom-[-40%] w-tiny h-tiny xl:w-lg xl:h-lg">
+    <section class="bg-light-blue flex justify-center h-100 relative">
+        <div class="my-40"></div>
+        <div class="flex rounded-full bg-white shadow-md absolute justify-center xl:left-[10%] bottom-[-47%] xl:bottom-[-40%] w-sm h-sm xl:w-tiny xl:h-tiny">
             <a href="" class="m-auto"><img width="50" height="50"  src="../img/add-pic.svg" alt="logo"></a>
         </div>
     </section>
 
-    <article class="flex flex-col justify-evenly mx-14 mt-56 mb-20 place-items-center xl:flex xl:flex-row xl:justify-around xl:text-left ">
+    <article class="flex flex-col justify-evenly mx-14 mt-40 mb-20 place-items-center xl:flex xl:flex-row xl:justify-around xl:text-left ">
         <div class="flex flex-col text-center xl:justify-between place-items-center ">
 
             <div class="flex flex-row my-10">
-                <h2 class="font-title text-3xl xl:text-4xl mx-2 xl:mx-10">Clémentine PUNTELLE, 28/06/1983</h2>
+                <h2 class="font-title text-2xl xl:text-3xl mx-2 xl:mx-10">Clémentine PUNTELLE, 28/06/1983</h2>
                 <img src="../img/overwrite-icon.svg" alt="overwrite" class="w-xxs h-xxs">
             </div>
-            <h3 class="text-2xl xl:text-3xl">Étudiante en biologie - Université de Nantes</h3>
-            <h3 class="text-2xl xl:text-3xl">Nantes, Pays de la Loire, France.</h3>
+            <h3 class="text-xl xl:text-2xl">Étudiante en biologie - Université de Nantes</h3>
+            <h3 class="text-xl xl:text-2xl">Nantes, Pays de la Loire, France.</h3>
 
         </div>
 
         <div class="flex flex-row justify-center my-10">
             <img src="../img/u-nantes.svg" alt="logo université" width="50" class="mx-4">
-            <h3 class="text-2xl xl:text-3xl flex flex-col justify-center">Université de Nantes</h3>
+            <h3 class="text-xl xl:text-2xl flex flex-col justify-center">Université de Nantes</h3>
         </div>
 
 
@@ -36,7 +36,7 @@
     <article class="my-14">
 
         <div class="flex flex-row justify-center place-items-center">
-            <h2 class="text-light-blue font-title mx-3 text-4xl">Coordonnées</h2>
+            <h2 class="text-light-blue font-title mx-3 text-3xl">Coordonnées</h2>
             <img src="../img/overwrite-icon.svg" alt="overwrite" class="w-xxs h-xxs">
         </div>
 
@@ -46,43 +46,43 @@
                 <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-phone-square-alt fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">06.00.00.00.00</p>
+                        <p class="text-lg xl:text-xl mx-4">06.00.00.00.00</p>
                     </div>
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-envelope fa-2x"></i>
-                        <a href="mailto: project@easyapply.fr" class="link link-underline text-xl xl:text-2xl mx-4">
+                        <a href="mailto: project@easyapply.fr" class="link link-underline text-lg xl:text-xl mx-4">
                             clementine.puntelle@exemple.com
                         </a>
                     </div>
                     <div class="flex items-center mb-2 ">
                         <i class="fab fa-internet-explorer fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">http://www.clementine-puntelle.tk/</p>
+                        <p class="text-lg xl:text-xl mx-4">http://www.clementine-puntelle.tk/</p>
                     </div>
                 </div>
 
                 <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2">
                         <i class="fab fa-instagram fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">clém_puntelle</p>
+                        <p class="text-lg xl:text-xl mx-4">clém_puntelle</p>
                     </div>
                     <div class="flex items-center mb-2">
                         <i class="fab fa-facebook-square fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">Clémentine Puntelle</p>
+                        <p class="text-lg xl:text-xl mx-4">Clémentine Puntelle</p>
                     </div>
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-lock fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">A123456*</p>
+                        <p class="text-lg xl:text-xl mx-4">A123456*</p>
                     </div>
                 </div>
 
                 <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2">
                         <i class="fab fa-twitter-square fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">clém_puntelle</p>
+                        <p class="text-lg xl:text-xl mx-4">clém_puntelle</p>
                     </div>
                     <div class="flex items-center mb-2">
                         <i class="fab fa-linkedin fa-2x"></i>
-                        <p class="text-xl xl:text-2xl mx-4">Clémentine Puntelle</p>
+                        <p class="text-lg xl:text-xl mx-4">Clémentine Puntelle</p>
                     </div>
                 </div>
             </div>

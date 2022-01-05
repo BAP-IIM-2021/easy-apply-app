@@ -6,16 +6,16 @@
 
     <section class="bg-gray flex justify-center h-100 relative">
         <img src="../img/add-pic.svg" alt="add pic" class="my-60">
-        <div class="flex rounded-full bg-white shadow-md absolute left-[10%] bottom-[-40%] w-lg h-lg">
+        <div class="flex rounded-full bg-white shadow-md absolute justify-center xl:left-[10%] bottom-[-30%] xl:bottom-[-40%] w-tiny h-tiny xl:w-lg xl:h-lg">
             <a href="" class="m-auto"><img width="50" height="50"  src="../img/add-pic.svg" alt="logo"></a>
         </div>
     </section>
 
     <article class="flex flex-col justify-evenly mx-14 mt-56 mb-20 place-items-center xl:flex xl:flex-row xl:justify-around xl:text-left ">
-        <div class="flex flex-col justify-between place-items-center ">
+        <div class="flex flex-col text-center xl:justify-between place-items-center ">
 
             <div class="flex flex-row my-10">
-                <h2 class="font-title text-4xl mx-10">Clémentine PUNTELLE, 28/06/1983</h2>
+                <h2 class="font-title text-4xl mx-4 xl:mx-10">Clémentine PUNTELLE, 28/06/1983</h2>
                 <img src="../img/overwrite-icon.svg" alt="overwrite" class="w-xxs h-xxs">
             </div>
             <h3 class="text-3xl">Étudiante en biologie - Université de Nantes</h3>
@@ -41,9 +41,9 @@
         </div>
 
 
-            <div class="flex xl:flex-row flex-col xl:justify-around items-center xl:mx-64 my-14" >
+            <div class="flex xl:flex-row flex-col xl:justify-around ml-16 xl:items-center xl:mx-64 my-14" >
 
-                <div class=" flex flex-col text-center xl:text-left">
+                <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-phone-square-alt fa-2x"></i>
                         <p class="text-2xl mx-4">06.00.00.00.00</p>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class=" flex flex-col text-center xl:text-left">
+                <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2">
                         <i class="fab fa-instagram fa-2x"></i>
                         <p class="text-2xl mx-4">clém_puntelle</p>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class=" flex flex-col text-center xl:text-left">
+                <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2">
                         <i class="fab fa-twitter-square fa-2x"></i>
                         <p class="text-2xl mx-4">clém_puntelle</p>

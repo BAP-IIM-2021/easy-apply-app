@@ -48,6 +48,7 @@ Route::get('/candidate/{id}', [CandidateController::class, 'profile'])->middlewa
 
 Route::delete('/candidate/delete/{id}', [ CandidateController::class, 'destroy'])->middleware('auth');
 
+Route::get('/candidate/show', [CandidateController::class, 'show']);
 /*------------------------------------------------------------------------ 
                         All About Employer pages
 ------------------------------------------------------------------------*/

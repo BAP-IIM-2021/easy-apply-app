@@ -38,6 +38,10 @@ class CandidateController extends Controller
     ]);
   }
 
+  public function show(){
+    return view ('candidate/show');
+  }
+
   public function destroy($id)
   {
     

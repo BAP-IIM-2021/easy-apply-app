@@ -12,48 +12,48 @@
   <form class="flex flex-col xl:w-5xl xl:px-64 justify-center items-center" method="POST" action="/employer/register">
     @csrf {{-- Token check --}}
 
-    <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+    <input type="hidden" name="id_user" value="{{ auth()->user()->id }}">
 
     <main class="flex flex-col xl:flex-row">
       <section>
         <div class="flex flex-col items-start mx-16 my-4">
           <label for="company-name"class="my-2" >Nom de l'entreprise</label>
-          <input class="btn-primary" type="text" placeholder="Nom de l'entreprise" name="company_name" value="{{ old('company_name')}}">
-          @error('company_name')
+          <input class="btn-primary" type="text" placeholder="Nom de l'entreprise" name="name" value="{{ old('name')}}">
+          @error('name')
             <p class="text-red-500 mt-1">{{ $message }}</p>
           @enderror
         </div>
 
-        <div class="flex flex-col items-start mx-16 my-4">
+        {{-- <div class="flex flex-col items-start mx-16 my-4">
           <label for="adress" class="my-2" >Adresse</label>
           <input class="btn-primary" type="text" placeholder="Adresse" name="address" value="{{ old('address')}}">
           @error('address')
             <p class="text-red-500 mt-1">{{ $message }}</p>
           @enderror
-        </div>
+        </div> --}}
   
         <div id ="container_form" class=" mx-16 mt-4">
-          <label for="company-activity" class="my-2">Secteur d'activité</label>
+          <label for="id_sector" class="my-2">Secteur d'activité</label>
           <div class=" options flex flex-col items-start mt-4">
-            <select class="btn-primary" type="text" name="business_sector_id"> 
+            <select class="btn-primary" type="text" name="id_sector"> 
               <option value="">--Sélectionnez l'option--</option>
               @php
-                $businessSector = App\Models\BusinessSector::all()
+                $sectors = App\Models\Sector::all()
               @endphp
-              @foreach ($businessSector as $sector)
+              @foreach ($sectors as $sector)
                 <option value="{{ $sector->id }}">{{ $sector->label }}</option>
               @endforeach
             </select>
-            @error('business_sector_id')
+            @error('id_sector')
               <p class="text-red-500 mt-1">{{ $message }}</p>
             @enderror
           </div>
         </div>
   
         <div id ="container_form" class="mx-16 mt-4">
-          <label for="company-size" class="my-2">Taille de l'entreprise</label>
+          <label for="id_company-size" class="my-2">Taille de l'entreprise</label>
           <div class=" options flex flex-col items-start mt-4">
-            <select class="btn-primary" type="text" name="company_size_id"> 
+            <select class="btn-primary" type="text" name="id_company_size"> 
               <option value="">--Sélectionnez l'option--</option>
               @php
                 $companySize = App\Models\CompanySize::all()
@@ -62,7 +62,7 @@
                 <option value="{{ $size->id }}">{{ $size->label }}</option>
               @endforeach
             </select>
-            @error('company_size_id')
+            @error('id_company_size')
               <p class="text-red-500 mt-1">{{ $message }}</p>
             @enderror
           </div>

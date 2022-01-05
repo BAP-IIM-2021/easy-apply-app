@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class CompanySize extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'label',
+    ];
+
+    public function company() {
+        return $this->hasMany(Company::class);
+    }
 }

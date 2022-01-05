@@ -9,7 +9,7 @@ use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\SearchController;
 
 /*------------------------------------------------------------------------ 
-                  All About common pages
+                        All About common pages
 ------------------------------------------------------------------------*/
 
 // Redirect to the home page
@@ -34,24 +34,26 @@ Route::post('/logout', [SessionController::class, 'close'])->middleware('auth');
 Route::get('/account', [SessionController::class, 'choose'])->middleware('auth');
 
 /*------------------------------------------------------------------------ 
-                  All About Candidate pages
+                        All About Candidate pages
 ------------------------------------------------------------------------*/
 
 // Redirects to candidate registration
-Route::get('/candidate/register', [CandidateController::class, 'create'])->middleware('auth');
+Route::get('/candidate/register', [CandidateController::class, 'create'])->middleware('auth')->name('candidateRegister');
 
 // To get data candidate insert in the page
 Route::post('/candidate/register', [CandidateController::class, 'store'])->middleware('auth');
 
 // Redirects to the candidate page
-Route::get('/candidate', [CandidateController::class, 'profile'])->middleware('auth');
+Route::get('/candidate/{id}', [CandidateController::class, 'profile'])->middleware('auth');
+
+Route::delete('/candidate/delete/{id}', [ CandidateController::class, 'destroy'])->middleware('auth');
 
 /*------------------------------------------------------------------------ 
-                  All About Employer pages
+                        All About Employer pages
 ------------------------------------------------------------------------*/
 
 // Redirects to Employer registration
-Route::get('/employer/register', [EmployerController::class, 'create'])->middleware('auth');
+Route::get('/employer/register', [EmployerController::class, 'create'])->middleware('auth')->name('employerRegister');
 
 // To get data employer insert in the page
 Route::post('/employer/register', [EmployerController::class, 'store'])->middleware('auth');

@@ -15,19 +15,31 @@ class CandidateController extends Controller
     // Create the user
     $attributes = request()->validate([
       'last_name' => ['required', 'max:30', 'min:3'],
-      'firstname' => ['required', 'max:30', 'min:3'],
+      'first_name' => ['required', 'max:30', 'min:3'],
       'birth_date' => 'date',
-      'address' => 'min:3',
+      // 'address' => 'min:3',
       'phone_number' => 'numeric',
-      'user_id' => ['required']
+      'id_user' => ['required'],
+      'id_status' => ['required'],
     ]);
 
     Candidate::create($attributes);
+  
 
-    return redirect('/candidate');
+    return redirect('/');
   }
 
-  public function profile() {
-    return view('candidate/profile');
+  public function profile($id) {
+    $candidate = Candidate::findOrFail($id);
+    $softskills = $candidate->softkills;
+    return view('candidate/profile', [ 
+      'candidate' => $candidate,
+      'softskills' => $softskills
+    ]);
+  }
+
+  public function destroy($id)
+  {
+    
   }
 }

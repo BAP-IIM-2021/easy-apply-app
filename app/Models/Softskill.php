@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Language extends Model
+class Softskill extends Model
 {
     use HasFactory;
 
@@ -13,10 +13,7 @@ class Language extends Model
       'label'
     ];
 
-    public function candidate() {
-      return $this->hasMany(Candidatelanguage::class);
-    }
-    public function job() {
-      return $this->hasMany(JobLanguage::class);
+    public function softskill() {
+      return $this->hasMany(CandidateSoftskill::class);
     }
 }

@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Language extends Model
+class JobTag extends Model
 {
     use HasFactory;
-
     protected $fillable = [
-      'label'
+        'id_tag',
+        'id_job',
     ];
 
-    public function candidate() {
-      return $this->hasMany(Candidatelanguage::class);
+    public function tag() {
+        return $this->belongsTo(Tag::class);
     }
+
     public function job() {
-      return $this->hasMany(JobLanguage::class);
+        return $this->belongsTo(Job::class);
     }
 }

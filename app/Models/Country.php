@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Degree extends Model
+class Country extends Model
 {
     use HasFactory;
-
     protected $fillable = [
-      'label'
+        'label',
     ];
 
-    public function education() {
-      return $this->hasMany(Education::class);
+    public function location() {
+        return $this->hasMany(Location::class);
     }
 }

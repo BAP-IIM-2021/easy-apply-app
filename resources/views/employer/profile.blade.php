@@ -2,14 +2,20 @@
 @include('partials/header')
 @section('content')
 
+@php
+$company = App\Models\Company::where('id_user', auth()->user()->id)->first();
+@endphp
+  
+
 <section class="bg-primary w-full h-auto p-8 xl:p-24 flex flex-col xl:flex-row gap-8 xl:justify-center xl:place-items-center">
   <div class="rounded-full bg-white shadow-md p-4 xl:p-8 w-fit m-auto xl:m-0">
     <img class="h-32 xl:w-sm xl:h-auto object-contain m-auto" src="./img/logo.png" alt="logo">
   </div>
+  
   <div class="w-full text-center xl:text-left xl:w-1/2 text-white ">
-    <h1 class="font-bold text-xl xl:text-3xl pb-8">Nom de l'entreprise</h1>
+    <h1 class="font-bold text-xl xl:text-3xl pb-8">{{$company->name}}</h1>
     <div class="text-lg leading-relaxed">
-      <p>Description de l'entreprise, Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sint non quos veniam, nam aliquam ab quam odit tempore qui, quidem eaque, molestias id repudiandae! Ut, error eos. Consequatur, consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolorum impedit, quo fugit ratione enim doloribus voluptates unde veniam autem quod dolor vel atque explicabo nostrum ab, nobis, incidunt fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur id amet, nemo accusamus nam impedit enim corrupti neque illo autem hic nesciunt sed tempora, dignissimos, dolorum incidunt perferendis voluptates odit?</p>
+      <p>{{$company->description}}?</p>
     </div>
   </div>
 </section>

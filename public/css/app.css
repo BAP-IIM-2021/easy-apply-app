@@ -381,7 +381,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.translate-x-xl, .translate-x-1\/2, .-translate-x-1\/2, .transform, .hover\:scale-110, .xl\:translate-x-1\/3 {
+.-translate-x-1\/2, .translate-x-xl, .transform, .hover\:scale-110 {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -490,8 +490,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .relative {
   position: relative;
 }
-.left-48 {
-  left: 12rem;
+.left-1\/2 {
+  left: 50%;
 }
 .-top-24 {
   top: -6rem;
@@ -510,15 +510,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .top-0 {
   top: 0px;
-}
-.left-60 {
-  left: 15rem;
-}
-.left-10 {
-  left: 2.5rem;
-}
-.left-1\/2 {
-  left: 50%;
 }
 .m-auto {
   margin: auto;
@@ -723,37 +714,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-base {
   width: 25rem;
 }
-.w-60 {
-  width: 15rem;
-}
-.w-40 {
-  width: 10rem;
-}
-.w-48 {
-  width: 12rem;
-}
-.w-9 {
-  width: 2.25rem;
-}
-.w-20 {
-  width: 5rem;
-}
 .w-14 {
   width: 3.5rem;
 }
 .max-w-sm {
   max-width: 24rem;
 }
-.translate-x-xl {
-  --tw-translate-x: 200rem;
-  transform: var(--tw-transform);
-}
-.translate-x-1\/2 {
-  --tw-translate-x: 50%;
-  transform: var(--tw-transform);
-}
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: var(--tw-transform);
+}
+.translate-x-xl {
+  --tw-translate-x: 200rem;
   transform: var(--tw-transform);
 }
 .transform {
@@ -853,10 +825,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(56 182 255 / var(--tw-bg-opacity));
 }
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
 .bg-white-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(254 248 242 / var(--tw-bg-opacity));
@@ -871,14 +839,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black-mat {
   --tw-bg-opacity: 1;
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
-}
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(112 112 112 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -952,10 +912,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -1153,10 +1109,6 @@ html{ /* Size for desktop */
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.hover\:border-primary:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(56 182 255 / var(--tw-border-opacity));
-}
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1226,10 +1178,6 @@ html{ /* Size for desktop */
   --tw-ring-opacity: 0.75;
 }
 @media (min-width: 1280px) {
-
-  .xl\:left-1\/3 {
-    left: 33.333333%;
-  }
 
   .xl\:m-36 {
     margin: 9rem;
@@ -1321,11 +1269,6 @@ html{ /* Size for desktop */
 
   .xl\:max-w-2xl {
     max-width: 42rem;
-  }
-
-  .xl\:translate-x-1\/3 {
-    --tw-translate-x: 33.333333%;
-    transform: var(--tw-transform);
   }
 
   .xl\:flex-row {

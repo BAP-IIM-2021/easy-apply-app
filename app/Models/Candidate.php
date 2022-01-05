@@ -9,55 +9,51 @@ class Candidate extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
-    //     'last_name', 
-    //     'firstname',
-    //     'birth_date',
-    //     'address',
-    //     'linkedin',
-    //     'website',
-    //     'phone_number',
-    //     'photo',
-    //     'cv',
-    //     'profile_completed', 
-    //     'is_profile_completed',
-    //     'location_id',
-    //     'status_id',
-    //     'degree_id',
-    //     'training_id',
-    //     'year_exp_id',
-    //     'user_id'
-    // ];
+    protected $fillable = [
+      'first_name',
+      'last_name',
+      'birth_date',
+      'phone_number',
+      'profile_picture',
+      'cv',
+      'website',
+      'intagram',
+      'facebook',
+      'linkedin',
+      'is_completed',
+      'id_status',
+      'id_user',
+    ];
 
-    public function location(){
-        return $this->belongsTo(Location::class);
+    public function user() {
+      return $this->belongsTo(User::class);
     }
 
-    public function status(){
-        return $this->belongsTo(Status::class);
+    public function statu() {
+      return $this->belongsTo(Statu::class);
     }
 
-    public function degree(){
-        return $this->belongsTo(Degree::class);
+    public function softskill() {
+      return $this->hasMany(CandidateSoftskill::class);
     }
 
-    public function training(){
-        return $this->belongsTo(Training::class);
+    public function education() {
+      return $this->hasMany(Education::class);
     }
 
-    public function year_exp(){
-        return $this->belongsTo(YearExp::class);
+    public function language() {
+      return $this->hasMany(CandidateLanguage::class);
     }
 
-    public function user(){
-        return $this->belongsTo(User::class);
+    public function sector() {
+      return $this->hasMany(CandidateSector::class);
     }
 
-    public function fields(){
-        return $this->belongsToMany(Field::class, 'candidate_fields', 'field_id', 'candidate_id')->withPivot('year_exp')->withTimestamps();
+    public function experience() {
+      return $this->hasMany(Experience::class);
     }
 
-    public function jobs(){
-        return $this->belongsToMany(Job::class, 'nominations', 'candidate_id', 'job_id')->withPivot('date', 'status')->withTimestamps();
+    public function job() {
+      return $this->hasMany(CandidateToJob::class);
     }
 }

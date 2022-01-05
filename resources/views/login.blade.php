@@ -20,7 +20,7 @@
                 <div class="flex flex-col mx-16 mt-4">
                     <label for="password" class="my-2" >Mot de passe</label>
                     <input class="btn-primary" type="password" placeholder="Mot de passe" name="password">
-                    @error('')
+                    @error('password')
                         <p class="text-red-500 mt-1 w-tiny">{{ $message }}</p>
                     @enderror
                 </div>

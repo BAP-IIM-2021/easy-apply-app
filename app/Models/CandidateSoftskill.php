@@ -5,18 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Language extends Model
+class CandidateSoftskill extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-      'label'
+      'id_softskill',
+      'id_candidate'
     ];
 
     public function candidate() {
-      return $this->hasMany(Candidatelanguage::class);
+      return $this->belongsTo(Candidate::class);
     }
-    public function job() {
-      return $this->hasMany(JobLanguage::class);
+
+    public function softskill() {
+      return $this->belongsTo(Softskill::class);
     }
 }

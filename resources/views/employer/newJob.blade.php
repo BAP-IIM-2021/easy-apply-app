@@ -2,46 +2,70 @@
 @include('partials/header')
 
 @section('content')
+@php
+$auth_id =  auth()->user()->id;
+$company = App\Models\Company::where('id_user', auth()->user()->id)->first();
+@endphp
+
 
 <section class="text-xl">
     <div class="bg-primary flex justify-center text-white items-center py-32">
-        <h1 class="text-5xl">Créer un travail</h1><br>
+        <h1 class="text-5xl">Créer un job</h1><br>
     </div>
-    <form class="flex flex-col xl:mx-96 items-center" action="POST">
+    <form class="flex flex-col xl:mx-96 items-center" method="POST" action="/employer/new-job">
+        @csrf
+        <input type="hidden" name="id_company" value="{{$company->id}}">
+        <input type="hidden" name="archive_date" value="<?= date('Y-m-d') ?>">
         <div class="flex flex-col xl:flex-row py-10" >
             <div class="flex flex-col items-start mx-16 my-4">
-                <label for="activity"class="my-2" >Nom</label>
-                <input class="btn-primary" type="text" placeholder="Domaine d'activité" name="label">
+                <label for="label"class="my-2" >Nom</label>
+                <input class="btn-primary" type="text" placeholder="Nom" name="label">
             </div>
             <div class="flex flex-col items-start mx-16 my-4">
-                <label for="activity"class="my-2" >Domaine d'activité</label>
-                <input class="btn-primary" type="text" placeholder="Domaine d'activité" name="activity">
+                <label for="id_sector"class="my-2 " >Domaine d'activité</label>
+                <select name="id_sector" class="btn-primary">
+                <option value="">--Sélectionnez l'option--</option>
+                @php
+                    $sectors = App\Models\Sector::all()
+                @endphp
+                @foreach ($sectors as $sector)
+                    <option value="{{ $sector->id }}">{{ $sector->label }}</option>
+                @endforeach
+                </select>
             </div>
             <div class="flex flex-col items-start mx-16 my-4">
-                <label for="contract" class="my-2" >Type de contrat</label>
-                <select name="contract" id="" class="btn-primary text-gray-400">
-                            <option value="">CDI</option>
-                            <option value="">CDD</option>
-                            <option value="">ETT</option>
-                            <option value="">Intérim</option>
-                            <option value="">Stage</option>
-                            <option value="">Alternance</option>
-                            <option value="">Apprentissage</option>
+                <label for="id_contract_type" class="my-2" >Type de contrat</label>
+                <select name="id_contract_type" class="btn-primary text-gray-400">
+                    @php
+                    $contracts = App\Models\ContractType::all()
+                  @endphp
+                  @foreach ($contracts as $contract)
+                    <option value="{{ $contract->id }}">{{ $contract->label }}</option>
+                  @endforeach
                         </select>
             </div>
             <div class="flex flex-col items-start mx-16 my-4">
                 <label for="salary" class="my-2">Salaire</label>
                 <input class="btn-primary text-gray-400" type="text" placeholder="Salaire" name="salary">
             </div>
+            
         </div>
+        
         <div class="flex flex-col xl:flex-row py-10">
+            <div class="flex flex-col items-start mx-16 my-4">
+                <label for="id_working_mode" class="my-2" >Type de travail</label>
+                <select name="id_working_mode" id="" class="btn-primary text-gray-400">
+                    @php
+                    $works = App\Models\WorkingMode::all()
+                    @endphp
+                    @foreach ($works as $work)
+                        <option value="{{ $work->id }}">{{ $work->label }}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="flex flex-col items-start mx-16 my-4">
                 <label for="description" class="my-2">Description</label>
                 <textarea class="btn-primary text-gray-400 h-32" type="text" placeholder="Présentez le travail en quelques lignes..." name="description"></textarea>
-            </div>
-            <div class="flex flex-col items-start mx-16 my-4">
-                <label for="goal" class="my-2">Missions</label>
-                <textarea class="btn-primary text-gray-400 h-32" type="text" placeholder="Définissez les objectifs à remplir..." name="goal"></textarea>
             </div>
         </div>
         <div class="flex flex-col xl:flex-row py-10">

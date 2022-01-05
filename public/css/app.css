@@ -511,6 +511,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-0 {
   top: 0px;
 }
+.bottom-\[-30\%\] {
+  bottom: -30%;
+}
 .m-auto {
   margin: auto;
 }
@@ -592,6 +595,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 5rem;
   margin-right: 5rem;
 }
+.my-60 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -640,6 +655,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-20 {
   margin-top: 5rem;
 }
+.mt-56 {
+  margin-top: 14rem;
+}
+.ml-16 {
+  margin-left: 4rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -675,6 +699,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-medium {
   height: 12rem;
+}
+.h-tiny {
+  height: 20rem;
 }
 .w-sm {
   width: 10rem;
@@ -737,6 +764,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .list-decimal {
   list-style-type: decimal;
 }
+.flex-row {
+  flex-direction: row;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -784,6 +814,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 .border-2 {
   border-width: 2px;
@@ -839,6 +872,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black-mat {
   --tw-bg-opacity: 1;
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+}
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 112 112 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -913,6 +950,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -921,6 +966,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .text-center {
   text-align: center;
@@ -1179,6 +1227,14 @@ html{ /* Size for desktop */
 }
 @media (min-width: 1280px) {
 
+  .xl\:left-\[10\%\] {
+    left: 10%;
+  }
+
+  .xl\:bottom-\[-40\%\] {
+    bottom: -40%;
+  }
+
   .xl\:m-36 {
     margin: 9rem;
   }
@@ -1207,6 +1263,11 @@ html{ /* Size for desktop */
     margin-right: 16rem;
   }
 
+  .xl\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .xl\:mb-32 {
     margin-bottom: 8rem;
   }
@@ -1217,6 +1278,10 @@ html{ /* Size for desktop */
 
   .xl\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .xl\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .xl\:flex {
@@ -1237,6 +1302,10 @@ html{ /* Size for desktop */
 
   .xl\:h-auto {
     height: auto;
+  }
+
+  .xl\:h-lg {
+    height: 30rem;
   }
 
   .xl\:w-2xl {
@@ -1267,6 +1336,10 @@ html{ /* Size for desktop */
     width: 33%;
   }
 
+  .xl\:w-lg {
+    width: 30rem;
+  }
+
   .xl\:max-w-2xl {
     max-width: 42rem;
   }
@@ -1279,12 +1352,20 @@ html{ /* Size for desktop */
     place-items: center;
   }
 
+  .xl\:items-center {
+    align-items: center;
+  }
+
   .xl\:justify-start {
     justify-content: flex-start;
   }
 
   .xl\:justify-center {
     justify-content: center;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 
   .xl\:justify-around {
@@ -1342,6 +1423,11 @@ html{ /* Size for desktop */
 
   .xl\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }

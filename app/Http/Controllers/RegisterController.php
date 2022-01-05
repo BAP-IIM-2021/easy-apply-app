@@ -23,6 +23,6 @@ class RegisterController extends Controller
 
     auth()->login(User::create($attributes));
 
-    return redirect('/');
+    return redirect('/account');
   }
 }

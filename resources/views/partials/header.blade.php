@@ -8,7 +8,7 @@
         <a href="/" class="text-xl hover:text-light-blue transition duration-300 ease-out hover:ease-in">Accueil</a>
       </li>
       <li>
-        <a href="/candidate" class="text-xl hover:text-light-blue transition duration-300 ease-out hover:ease-in">Candidat</a>
+        <a href="/candidate/show" class="text-xl hover:text-light-blue transition duration-300 ease-out hover:ease-in">Candidat</a>
       </li>
       <li>
         <a href="/employer" class="text-xl hover:text-light-blue transition duration-300 ease-out hover:ease-in">Entreprise</a>

@@ -63,4 +63,8 @@ class EmployerController extends Controller
     return view('employer/job');
   }
 
+  public function destroy(Job $job){
+    $job->delete();
+  }
+
 }

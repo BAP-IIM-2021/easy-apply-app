@@ -38,6 +38,8 @@ Route::get('/account', [SessionController::class, 'choose'])->middleware('auth')
 ------------------------------------------------------------------------*/
 
 // Redirects to candidate registration
+Route::get('/candidate/show', [CandidateController::class, 'show'])->middleware('auth');
+
 Route::get('/candidate/register', [CandidateController::class, 'create'])->middleware('auth')->name('candidateRegister');
 
 // To get data candidate insert in the page
@@ -48,7 +50,9 @@ Route::get('/candidate/{id}', [CandidateController::class, 'profile'])->middlewa
 
 Route::delete('/candidate/delete/{id}', [ CandidateController::class, 'destroy'])->middleware('auth');
 
-Route::get('/candidate/show', [CandidateController::class, 'show']);
+
+
+
 /*------------------------------------------------------------------------ 
                         All About Employer pages
 ------------------------------------------------------------------------*/
@@ -69,6 +73,7 @@ Route::post('/employer/new-job', [EmployerController::class, 'store_job'])->midd
 
 // Redirects to the job-created page
 Route::get('/employer/job', [EmployerController::class, 'job'])->middleware('auth');
+
 
 /*------------------------------------------------------------------------ 
                   All About Search

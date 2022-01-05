@@ -11,6 +11,10 @@ class CandidateController extends Controller
     return view('candidate/register');
   }
 
+  public function show(){
+    return view('candidate/show');
+  }
+
   public function store(){
     // Create the user
     $attributes = request()->validate([
@@ -38,9 +42,6 @@ class CandidateController extends Controller
     ]);
   }
 
-  public function show(){
-    return view ('candidate/show');
-  }
 
   public function destroy($id)
   {

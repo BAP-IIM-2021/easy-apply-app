@@ -48,7 +48,7 @@ foreach ($jobs as $job) {
         $contract = App\Models\ContractType::where('id', $job->id_contract_type)->first();
         $sector_job = App\Models\Sector::where('id', $job->id_sector)->first();
       @endphp
-      <article class="w-3/4 m-auto bg-white shadow-md p-8 rounded-[20px]">
+      <article class="highlight w-3/4 m-auto bg-white shadow-md p-8 rounded-[5px]">
         <div class="flex justify-between ">
           <h3 class="font-bold text-lg xl:text-xl pb-2">Titre de l'annonce : {{$job->label}}</h3>
           <h3 class="font-bold text-lg xl:text-xl pb-2">Secteur : {{$sector_job->label}}</h3>

@@ -499,6 +499,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-1\/3 {
   left: 33.333333%;
 }
+.bottom-\[-30\%\] {
+  bottom: -30%;
+}
 .right-10 {
   right: 2.5rem;
 }
@@ -510,9 +513,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .top-0 {
   top: 0px;
-}
-.bottom-\[-30\%\] {
-  bottom: -30%;
 }
 .m-auto {
   margin: auto;
@@ -575,13 +575,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 8rem;
   margin-right: 8rem;
 }
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.my-60 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 .mx-8 {
   margin-left: 2rem;
@@ -594,18 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
-}
-.my-60 {
-  margin-top: 15rem;
-  margin-bottom: 15rem;
-}
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 .mt-12 {
   margin-top: 3rem;
@@ -646,15 +646,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-2 {
   margin-top: 0.5rem;
 }
-.mb-24 {
-  margin-bottom: 6rem;
-}
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-.mt-20 {
-  margin-top: 5rem;
-}
 .mt-56 {
   margin-top: 14rem;
 }
@@ -663,6 +654,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
+.mb-24 {
+  margin-bottom: 6rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .block {
   display: block;
@@ -688,6 +688,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-lg {
   height: 30rem;
 }
+.h-tiny {
+  height: 20rem;
+}
 .h-32 {
   height: 8rem;
 }
@@ -699,9 +702,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-medium {
   height: 12rem;
-}
-.h-tiny {
-  height: 20rem;
 }
 .w-sm {
   width: 10rem;
@@ -721,6 +721,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-2xl {
   width: 50rem;
 }
+.w-xxs {
+  width: 2rem;
+}
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -728,9 +731,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-3\/4 {
   width: 75%;
-}
-.w-xxs {
-  width: 2rem;
 }
 .w-1\/2 {
   width: 50%;
@@ -812,11 +812,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-xl {
   border-radius: 0.75rem;
 }
-.rounded-\[20px\] {
-  border-radius: 20px;
-}
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 .border-2 {
   border-width: 2px;
@@ -869,13 +869,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-transparent {
   background-color: transparent;
 }
-.bg-black-mat {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
-}
 .bg-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(112 112 112 / var(--tw-bg-opacity));
+}
+.bg-black-mat {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -926,6 +926,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -950,25 +958,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
 .pb-8 {
   padding-bottom: 2rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
 }
 .pt-20 {
   padding-top: 5rem;
-}
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 .text-center {
   text-align: center;
@@ -1077,6 +1077,7 @@ html{ /* Size for desktop */
     font-size: 14px;
 }
 
+/*Underline translate left to right animation*/
 .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
@@ -1095,29 +1096,229 @@ html{ /* Size for desktop */
 }
 
 
+/*Blue version*/
+.blue-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#38b6ff, #38b6ff);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+    padding-bottom: 5px;
+
+}
+
+.blue-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    padding-bottom: 5px;
+}
+
+
+/*Border outline animation*/
+.highlight {
+    position: relative;
+    z-index: 0;
+}
+
+.highlight:before, .highlight:after {
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    border-radius: 5px;
+    visibility: hidden;
+
+}
+
+.highlight:before {
+    border-top: 2px solid #38b6ff;
+    border-right: 2px solid #38b6ff;
+    transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
+    top: 0;
+    left: 0;
+
+}
+
+.highlight:after {
+    border-left: 2px solid #38b6ff;
+    border-bottom: 2px solid #38b6ff;
+    bottom: 0;
+    right: 0;
+    transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
+}
+
+.highlight:hover {
+    -webkit-animation: pulse 3s ease-out 0.4s;
+            animation: pulse 3s ease-out 0.4s;
+}
+
+.highlight:hover:before, .highlight:hover:after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.highlight:hover:before {
+    transition: width .1s ease, height .1s ease .1s;
+}
+
+.highlight:hover:after {
+    transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
+}
+
+
+
+
+/*Border outline animation dashed version*/
+.dashed-hover {
+    position: relative;
+    border: 2px solid gray;
+    border-style: dashed;
+    transition: 0.3s ease-out;
+    border-radius: 1.5rem;
+
+}
+
+.dashed-hover:before, .dashed-hover:after {
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    border-radius: 1.5rem;
+    visibility: hidden;
+
+}
+
+.dashed-hover:before {
+    border-top: 2px solid #38b6ff;
+    border-right: 2px solid #38b6ff;
+    transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
+    top: 0;
+    left: 0;
+    border-style: dashed;
+
+}
+
+.dashed-hover:after {
+    border-left: 2px solid #38b6ff;
+    border-bottom: 2px solid #38b6ff;
+    bottom: 0;
+    right: 0;
+    transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
+    border-style: dashed;
+}
+
+.dashed-hover:hover {
+    -webkit-animation: pulse 3s ease-out 0.4s;
+            animation: pulse 3s ease-out 0.4s;
+    border: none;
+    transition: 0.3s ease-in;
+}
+
+.dashed-hover:hover:before, .dashed-hover:hover:after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+
+}
+
+.dashed-hover:hover:before {
+    transition: width .1s ease, height .1s ease .1s;
+
+}
+
+.dashed-hover:hover:after {
+    transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
+}
+
+
+
 /*
- *  STYLE 2
+ *  Scrollback
  */
 
-/*body::-webkit-scrollbar-track*/
-/*{*/
-/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
-/*  border-radius: 5px;*/
-/*  background-color: #F5F5F5;*/
+body::-webkit-scrollbar-track
+{
+ background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+ border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #38B6FF;
+}
+
+.input-div{
+    position: relative;
+} /* necessary to give position: relative to parent. */
+
+/*input[type="text"] {*/
+/*    box-sizing: content-box;*/
 /*}*/
 
-/*body::-webkit-scrollbar*/
-/*{*/
-/*  width: 12px;*/
-/*  background-color: #F5F5F5;*/
-/*}*/
+.outline-input ~ .focus-border:before,
+.outline-input ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #38b6ff;
+    transition: 0.3s;
+}
+.outline-input ~ .focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
 
-/*body::-webkit-scrollbar-thumb*/
-/*{*/
-/*  border-radius: 10px;*/
-/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
-/*  background-color: #38B6FF;*/
-/*}*/
+}
+.outline-input ~ .focus-border i:before,
+.outline-input ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #38b6ff;
+    transition: 0.4s;
+
+
+}
+.outline-input ~ .focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    border-radius: 100px;
+
+}
+
+.outline-input:focus ~ .focus-border:before,
+.outline-input:focus ~ .focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 100px;
+
+}
+
+.outline-input:focus ~ .focus-border i:before,
+.outline-input:focus ~ .focus-border i:after {
+    height: 100%;
+    transition: 0.4s;
+    border-radius: 100px;
+
+}
 
 @media (max-width: 1540px) { /* Size for tablets */
     html{
@@ -1248,6 +1449,16 @@ html{ /* Size for desktop */
     margin-bottom: 0.75rem;
   }
 
+  .xl\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .xl\:mx-64 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
   .xl\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
@@ -1258,16 +1469,6 @@ html{ /* Size for desktop */
     margin-right: 5rem;
   }
 
-  .xl\:mx-64 {
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-
-  .xl\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .xl\:mb-32 {
     margin-bottom: 8rem;
   }
@@ -1276,12 +1477,12 @@ html{ /* Size for desktop */
     margin-top: 6rem;
   }
 
-  .xl\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
   .xl\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .xl\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .xl\:flex {
@@ -1296,6 +1497,10 @@ html{ /* Size for desktop */
     height: 35rem;
   }
 
+  .xl\:h-lg {
+    height: 30rem;
+  }
+
   .xl\:h-sm {
     height: 10rem;
   }
@@ -1304,16 +1509,16 @@ html{ /* Size for desktop */
     height: auto;
   }
 
-  .xl\:h-lg {
-    height: 30rem;
-  }
-
   .xl\:w-2xl {
     width: 50rem;
   }
 
   .xl\:w-5xl {
     width: 125rem;
+  }
+
+  .xl\:w-lg {
+    width: 30rem;
   }
 
   .xl\:w-base {
@@ -1334,10 +1539,6 @@ html{ /* Size for desktop */
 
   .xl\:w-1\/3 {
     width: 33%;
-  }
-
-  .xl\:w-lg {
-    width: 30rem;
   }
 
   .xl\:max-w-2xl {
@@ -1411,23 +1612,18 @@ html{ /* Size for desktop */
     line-height: 2.5rem;
   }
 
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }

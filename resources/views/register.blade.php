@@ -43,8 +43,8 @@
         <div class="input-div">
           <input class="btn-second outline-input" type="password" placeholder="Votre mot de passe" name="password-verify" required>
           <span class="focus-border">
-                        <i></i>
-                    </span>
+            <i></i>
+          </span>
           @error('password-verify')
           <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
           @enderror

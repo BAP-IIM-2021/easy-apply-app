@@ -2060,6 +2060,25 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+// Menu Burger
+var menu_burger = document.getElementById('menu-burger');
+var close = document.getElementById('x');
+var burger = document.getElementById('burger');
+
+function displayMenu() {
+  menu_burger.style.transform = 'translateX(0)';
+  burger.style.transform = 'translateX(500px)';
+}
+
+function displayyMenu() {
+  menu_burger.style.transform = 'translateX(500px)';
+  burger.style.transform = 'translateX(0)';
+} //events on click
+
+
+burger.addEventListener('click', displayMenu);
+close.addEventListener('click', displayyMenu);
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 document.getElementById('next_inscription').addEventListener('click', function () {

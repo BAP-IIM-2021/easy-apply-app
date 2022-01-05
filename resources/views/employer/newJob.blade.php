@@ -10,6 +10,10 @@
     <form class="flex flex-col xl:mx-96 items-center" action="POST">
         <div class="flex flex-col xl:flex-row py-10" >
             <div class="flex flex-col items-start mx-16 my-4">
+                <label for="activity"class="my-2" >Nom</label>
+                <input class="btn-primary" type="text" placeholder="Domaine d'activité" name="label">
+            </div>
+            <div class="flex flex-col items-start mx-16 my-4">
                 <label for="activity"class="my-2" >Domaine d'activité</label>
                 <input class="btn-primary" type="text" placeholder="Domaine d'activité" name="activity">
             </div>

@@ -15,7 +15,6 @@ module.exports = {
         'gray': '#707070',
         'white-cream': '#fef8f2',
         'black-mat': '#202020',
-        
         'light-blue': '#38B6FF', // a retirer une fois tout changer en primary
       },
       width: {
@@ -55,6 +54,9 @@ module.exports = {
         '7xl': '300rem',
         'screen': '100vh',
       },
+      translate: {
+        'xl': '200rem',
+      }
     },
   },
   plugins: [],

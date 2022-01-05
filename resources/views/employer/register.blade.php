@@ -17,17 +17,17 @@
       <section>
         <div class="flex flex-col items-start mx-16 my-4">
           <label for="company-name"class="my-2" >Nom de l'entreprise</label>
-          <input class="btn-primary" type="text" placeholder="Nom de l'entreprise" name="company_name">
+          <input class="btn-primary" type="text" placeholder="Nom de l'entreprise" name="company_name" value="{{ old('company_name')}}">
           @error('company_name')
-            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+            <p class="text-red-500 mt-1">{{ $message }}</p>
           @enderror
         </div>
 
         <div class="flex flex-col items-start mx-16 my-4">
           <label for="adress" class="my-2" >Adresse</label>
-          <input class="btn-primary" type="text" placeholder="Adresse" name="address">
+          <input class="btn-primary" type="text" placeholder="Adresse" name="address" value="{{ old('address')}}">
           @error('address')
-            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+            <p class="text-red-500 mt-1">{{ $message }}</p>
           @enderror
         </div>
   
@@ -44,7 +44,7 @@
               @endforeach
             </select>
             @error('business_sector_id')
-              <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+              <p class="text-red-500 mt-1">{{ $message }}</p>
             @enderror
           </div>
         </div>
@@ -62,7 +62,7 @@
               @endforeach
             </select>
             @error('company_size_id')
-              <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+              <p class="text-red-500 mt-1">{{ $message }}</p>
             @enderror
           </div>
         </div>
@@ -75,15 +75,15 @@
           <label for="img" class="my-4">Logo</label>
           <input type="file" class="max-w-sm xl:max-w-2xl rounded-xl py-24 px-8 border-2 border-slate-600 border-dashed bg-white" name="logo">
           @error('logo')
-            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+            <p class="text-red-500 mt-1">{{ $message }}</p>
           @enderror
         </div> 
 
         <div class="flex flex-col items-start mx-16 my-4">
           <label for="company-desc"class="my-2" >Description de l'entreprise</label>
-          <textarea class="btn-primary w-full " type="text" name="description"> </textarea>
+          <textarea class="btn-primary w-full " type="text" name="description" value="{{ old('description')}}"> </textarea>
           @error('description')
-            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+            <p class="text-red-500 mt-1">{{ $message }}</p>
           @enderror
         </div>
 

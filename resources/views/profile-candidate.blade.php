@@ -15,17 +15,17 @@
         <div class="flex flex-col text-center xl:justify-between place-items-center ">
 
             <div class="flex flex-row my-10">
-                <h2 class="font-title text-4xl mx-4 xl:mx-10">Clémentine PUNTELLE, 28/06/1983</h2>
+                <h2 class="font-title text-3xl xl:text-4xl mx-2 xl:mx-10">Clémentine PUNTELLE, 28/06/1983</h2>
                 <img src="../img/overwrite-icon.svg" alt="overwrite" class="w-xxs h-xxs">
             </div>
-            <h3 class="text-3xl">Étudiante en biologie - Université de Nantes</h3>
-            <h3 class="text-3xl text-gray">Nantes, Pays de la Loire, France.</h3>
+            <h3 class="text-2xl xl:text-3xl">Étudiante en biologie - Université de Nantes</h3>
+            <h3 class="text-2xl xl:text-3xl">Nantes, Pays de la Loire, France.</h3>
 
         </div>
 
         <div class="flex flex-row justify-center my-10">
             <img src="../img/u-nantes.svg" alt="logo université" width="50" class="mx-4">
-            <h3 class="text-3xl flex flex-col justify-center">Université de Nantes</h3>
+            <h3 class="text-2xl xl:text-3xl flex flex-col justify-center">Université de Nantes</h3>
         </div>
 
 
@@ -46,43 +46,43 @@
                 <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-phone-square-alt fa-2x"></i>
-                        <p class="text-2xl mx-4">06.00.00.00.00</p>
+                        <p class="text-xl xl:text-2xl mx-4">06.00.00.00.00</p>
                     </div>
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-envelope fa-2x"></i>
-                        <a href="mailto: project@easyapply.fr" class="link link-underline text-2xl mx-4">
+                        <a href="mailto: project@easyapply.fr" class="link link-underline text-xl xl:text-2xl mx-4">
                             clementine.puntelle@exemple.com
                         </a>
                     </div>
                     <div class="flex items-center mb-2 ">
                         <i class="fab fa-internet-explorer fa-2x"></i>
-                        <p class="text-2xl mx-4">http://www.clementine-puntelle.tk/</p>
+                        <p class="text-xl xl:text-2xl mx-4">http://www.clementine-puntelle.tk/</p>
                     </div>
                 </div>
 
                 <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2">
                         <i class="fab fa-instagram fa-2x"></i>
-                        <p class="text-2xl mx-4">clém_puntelle</p>
+                        <p class="text-xl xl:text-2xl mx-4">clém_puntelle</p>
                     </div>
                     <div class="flex items-center mb-2">
                         <i class="fab fa-facebook-square fa-2x"></i>
-                        <p class="text-2xl mx-4">Clémentine Puntelle</p>
+                        <p class="text-xl xl:text-2xl mx-4">Clémentine Puntelle</p>
                     </div>
                     <div class="flex items-center mb-2 ">
                         <i class="fas fa-lock fa-2x"></i>
-                        <p class="text-2xl mx-4">A123456*</p>
+                        <p class="text-xl xl:text-2xl mx-4">A123456*</p>
                     </div>
                 </div>
 
                 <div class=" flex flex-col xl:text-left">
                     <div class="flex items-center mb-2">
                         <i class="fab fa-twitter-square fa-2x"></i>
-                        <p class="text-2xl mx-4">clém_puntelle</p>
+                        <p class="text-xl xl:text-2xl mx-4">clém_puntelle</p>
                     </div>
                     <div class="flex items-center mb-2">
                         <i class="fab fa-linkedin fa-2x"></i>
-                        <p class="text-2xl mx-4">Clémentine Puntelle</p>
+                        <p class="text-xl xl:text-2xl mx-4">Clémentine Puntelle</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
 
 
     <div class="flex flex-row justify-center place-items-center mt-20">
-        <h2 class="text-light-blue font-title mx-3 text-4xl">Formation</h2>
+        <h2 class="text-light-blue font-title mx-3 text-2xl xl:text-3xl">Formation</h2>
         <img src="../img/overwrite-icon.svg" alt="overwrite" class="w-xxs h-xxs">
     </div>
 
@@ -99,7 +99,7 @@
         <div class="flex flex-col items-start">
             <label for="img" class="my-4">CV</label>
 
-            <div class="dashed-hover rounded-3xl py-20 px-20 bg-white ">
+            <div class="dashed-hover py-20 px-20 bg-white ">
                 <input id="file-input" type="file" class="hidden" name="pdf">
                 <label for="file-input"><img width="50" height="50" class="m-auto cursor-pointer"  src="../img/add-pic.svg" alt="logo"></label>
             </div>

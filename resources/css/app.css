@@ -119,6 +119,8 @@ html{ /* Size for desktop */
     border: 2px solid gray;
     border-style: dashed;
     transition: 0.3s ease-out;
+    border-radius: 1.5rem;
+
 }
 
 .dashed-hover:before, .dashed-hover:after {
@@ -128,6 +130,7 @@ html{ /* Size for desktop */
     position: absolute;
     border-radius: 1.5rem;
     visibility: hidden;
+
 }
 
 .dashed-hover:before {

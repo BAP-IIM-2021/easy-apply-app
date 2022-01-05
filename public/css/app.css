@@ -541,6 +541,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bottom-\[-47\%\] {
   bottom: -47%;
 }
+.bottom-\[-40\%\] {
+  bottom: -40%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -641,6 +644,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-40 {
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -1416,6 +1431,10 @@ body::-webkit-scrollbar-thumb
     bottom: -40%;
   }
 
+  .xl\:bottom-\[-47\%\] {
+    bottom: -47%;
+  }
+
   .xl\:m-36 {
     margin: 9rem;
   }
@@ -1442,6 +1461,16 @@ body::-webkit-scrollbar-thumb
   .xl\:mx-64 {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .xl\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .xl\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 
   .xl\:mb-32 {

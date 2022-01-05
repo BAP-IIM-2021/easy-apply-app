@@ -5,8 +5,8 @@
 
 
     <section class="bg-light-blue flex justify-center h-100 relative">
-        <div class="my-40"></div>
-        <div class="flex rounded-full bg-white shadow-md absolute justify-center xl:left-[10%] bottom-[-47%] xl:bottom-[-40%] w-sm h-sm xl:w-tiny xl:h-tiny">
+        <div class="my-24 xl:my-40"></div>
+        <div class="flex rounded-full bg-white shadow-md absolute justify-center xl:left-[10%] bottom-[-40%] xl:bottom-[-47%] w-sm h-sm xl:w-tiny xl:h-tiny">
             <a href="" class="m-auto"><img width="50" height="50"  src="../img/add-pic.svg" alt="logo"></a>
         </div>
     </section>
@@ -107,43 +107,43 @@
 
         </div>
 
-        <div class="highlight shadow-md hover:shadow-xl bg-white rounded-3xl p-10 m-5 relative w-lg my-14">
+        <div class="highlight shadow-md hover:shadow-xl bg-white rounded-3xl p-10 m-5 relative w-lg my-8 xl:my-14">
 
-            <h3 class="font-title text-light-blue text-center text-2xl font-bold mt-5">Stage en pharmacie</h3>
+            <h3 class="font-title text-light-blue text-center text-xl xl:text-2xl font-bold mt-5">Stage en pharmacie</h3>
             <p class="text-center">De mai 2020 à juillet 2020</p>
 
-            <p class="text-xl mt-14">Stage rémunéré de 3 mois dans une pharmacie
+            <p class="text-lg xl:text-xl mt-14">Stage rémunéré de 3 mois dans une pharmacie
                 dans le 5ème arrondissement de Paris.
             </p><br>
-            <p class="text-xl mt-5">- approvisionnement des stocks</p>
-            <p class="text-xl mt-5">- conseil des clients</p>
-            <p class="text-xl mt-5">- vente de médicaments sur ordonnance</p>
+            <p class="text-lg xl:text-xl mt-5">- approvisionnement des stocks</p>
+            <p class="text-lg xl:text-xl mt-5">- conseil des clients</p>
+            <p class="text-lg xl:text-xl mt-5">- vente de médicaments sur ordonnance</p>
         </div>
 
-        <div class="highlight shadow-md hover:shadow-xl bg-white rounded-3xl p-10 m-5 relative w-lg my-14">
+        <div class="highlight shadow-md hover:shadow-xl bg-white rounded-3xl p-10 m-5 relative w-lg my-8 xl:my-14">
 
-            <h3 class="font-title text-light-blue text-center text-2xl font-bold mt-5">Stage en pharmacie</h3>
+            <h3 class="font-title text-light-blue text-center text-xl xl:text-2xl font-bold mt-5">Stage en pharmacie</h3>
             <p class="text-center">De mai 2020 à juillet 2020</p>
 
-            <p class="text-xl mt-14">Stage rémunéré de 3 mois dans une pharmacie
+            <p class="text-lg xl:text-xl mt-14">Stage rémunéré de 3 mois dans une pharmacie
                 dans le 5ème arrondissement de Paris.
             </p><br>
-            <p class="text-xl mt-5">- approvisionnement des stocks</p>
-            <p class="text-xl mt-5">- conseil des clients</p>
-            <p class="text-xl mt-5">- vente de médicaments sur ordonnance</p>
+            <p class="text-lg xl:text-xl mt-5">- approvisionnement des stocks</p>
+            <p class="text-lg xl:text-xl mt-5">- conseil des clients</p>
+            <p class="text-lg xl:text-xl mt-5">- vente de médicaments sur ordonnance</p>
         </div>
 
-        <div class="highlight shadow-md hover:shadow-xl bg-white rounded-3xl p-10 m-5 relative w-lg my-14">
+        <div class="highlight shadow-md hover:shadow-xl bg-white rounded-3xl p-10 m-5 relative w-lg my-8 xl:my-14">
 
-            <h3 class="font-title text-light-blue text-center text-2xl font-bold mt-5">Stage en pharmacie</h3>
+            <h3 class="font-title text-light-blue text-center text-xl xl:text-2xl font-bold mt-5">Stage en pharmacie</h3>
             <p class="text-center">De mai 2020 à juillet 2020</p>
 
-            <p class="text-xl mt-14">Stage rémunéré de 3 mois dans une pharmacie
+            <p class="text-lg xl:text-xl mt-14">Stage rémunéré de 3 mois dans une pharmacie
                 dans le 5ème arrondissement de Paris.
             </p><br>
-            <p class="text-xl mt-5">- approvisionnement des stocks</p>
-            <p class="text-xl mt-5">- conseil des clients</p>
-            <p class="text-xl mt-5">- vente de médicaments sur ordonnance</p>
+            <p class="text-lg xl:text-xl mt-5">- approvisionnement des stocks</p>
+            <p class="text-lg xl:text-xl mt-5">- conseil des clients</p>
+            <p class="text-lg xl:text-xl mt-5">- vente de médicaments sur ordonnance</p>
         </div>
 
 

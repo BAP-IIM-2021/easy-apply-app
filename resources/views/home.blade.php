@@ -36,73 +36,57 @@
   </article>
 
   <section class="xl:flex xl:flex-row xl:justify-evenly xl:mt-24 flex flex-col justify-center place-items-center">
-    <div class="shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
+    <div class="h-lg shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-16 xl:my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
 
-      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm">
-        <img width="100" height="100" class="m-auto" src="./img/logo.png" alt="logo">
+      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm justify-center place-items-center text-center">
+        <i class="fas fa-infinity fa-4x text-light-blue"></i>
       </div>
 
-      <div class="mb-28">
-        <h3 class="font-title uppercase text-center text-2xl font-bold mt-16">Offres illimitées</h3>
-        <p class="mt-20 text-lg xl:text-xl">Les publications d’offres
-          d’emplois sont illimitées.
-          Trouvez la personne la
-          plus qualifié pour une
-          mission, ou la mission qui
-          vous correspondra le
-          mieux, dès maintenant !</p>
+      <div class="">
+        <h3 class="font-title uppercase text-center text-xl xl:text-2xl font-bold pt-16">Offres illimitées</h3>
+        <p class="pt-20 text-lg xl:text-xl text-justify">Les publications d’offres d’emplois sont illimitées. Trouvez la personne la plus qualifié pour une mission, ou la mission qui vous correspondra le mieux, dès maintenant !</p>
       </div>
 
     </div>
 
-    <div class="shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
+    <div class="h-lg shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-16 xl:my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
 
-      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm">
-        <img width="100" height="100" class="m-auto" src="./img/logo.png" alt="logo">
+      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm justify-center place-items-center text-center">
+        <i class="fas fa-bullseye fa-4x text-light-blue"></i>
       </div>
 
-      <div class="mb-28">
-        <h3 class="font-title uppercase text-center text-2xl font-bold mt-16">Visibilité de l’offre</h3>
-        <p class="mt-20 text-lg xl:text-xl">Votre offre est proposée aux profils
-          recherchés et à ceux intéressés par vos
-          missions.
-          EasyApply se charge de vous mettre en
-          relation le plus facilement possible.</p>
+      <div class="">
+        <h3 class="font-title uppercase text-center text-xl xl:text-2xl font-bold pt-16">Visibilité de l’offre</h3>
+        <p class="pt-20 text-lg xl:text-xl text-justify">Votre offre est proposée aux profils recherchés et à ceux intéressés par vos missions. EasyApply se charge de vous mettre en relation le plus facilement possible.</p>
       </div>
 
     </div>
 
 
-    <div class="shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
+    <div class="h-lg shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-16 xl:my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
 
-      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm">
-        <img width="100" height="100" class="m-auto" src="./img/logo.png" alt="logo">
+      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm justify-center place-items-center text-center">
+        <i class="far fa-clock fa-4x text-light-blue"></i>
       </div>
 
-      <div class="mb-28">
-        <h3 class="font-title uppercase text-center text-2xl font-bold mt-16">Gain de temps</h3>
-        <p class="mt-20 text-lg xl:text-xl">Les candidatures sont classées
-          automatiquement selon vos critères.
-          Économisez un temps précieux pour
-          vous consacrer à votre productivité.
+      <div class="">
+        <h3 class="font-title uppercase text-center text-xl xl:text-2xl font-bold pt-16">Gain de temps</h3>
+        <p class="pt-20 text-lg xl:text-xl text-justify">Les candidatures sont classées automatiquement selon vos critères. Économisez un temps précieux pour vous consacrer à votre productivité.
         </p>
       </div>
 
     </div>
 
 
-    <div class="shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
+    <div class="h-lg shadow-md hover:shadow-xl bg-white rounded-lg p-10 m-5 relative w-lg my-16 xl:my-14 transition duration-300 ease-out hover:ease-in hover:scale-110 hover:bg-primary hover:text-white ">
 
-      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm">
-        <img width="100" height="100" class="m-auto" src="./img/logo.png" alt="logo">
+      <div class="flex rounded-full bg-white shadow-md absolute left-1/3 -top-24 w-sm h-sm justify-center place-items-center text-center">
+        <i class="far fa-money-bill-alt fa-4x text-light-blue"></i>
       </div>
 
-      <div class="mb-28">
-        <h3 class="font-title uppercase text-center text-2xl font-bold mt-16">Economies</h3>
-        <p class="mt-20 text-lg xl:text-xl">Un tarif annuel et unique pour l’utilisation
-          complète et illimitée de nos services.
-          Un prix abordable pour un résultat
-          garantie !
+      <div class="">
+        <h3 class="font-title uppercase text-center text-xl xl:text-2xl font-bold pt-16">Economies</h3>
+        <p class="pt-20 text-lg xl:text-xl text-justify">Un tarif annuel et unique pour l’utilisation complète et illimitée de nos services. Un prix abordable pour un résultat garantie !
         </p>
       </div>
 
